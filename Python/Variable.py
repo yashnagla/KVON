@@ -71,13 +71,60 @@
 # print(bool(12))
 # print(bool(0))
 
-mylist = ["apple", "banana", "cherry"]
-print(type(mylist))
-print(mylist)
+# mylist = ["apple", "banana", "cherry"]
+# print(type(mylist))
+# print(mylist)
 
-mylist[1] = "Potato"
-print(mylist)
+# mylist[1] = "Potato"
+# print(mylist)
 
-mylist.insert(len(mylist), "Banana")
-print(mylist)
+# mylist.insert(len(mylist), "Banana")
+# print(mylist)
 
+
+# thislist = ["apple", "banana", "cherry"]
+# for x in thislist:
+#   print(x)
+
+# for i in range(len(thislist)):
+#    print(thislist[i]) 
+
+# newlist = [x for x in thislist if x != "apple"]
+# print(newlist)
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+# newlist = []
+
+# for x in fruits:
+#   if "a" in x:
+#     newlist.append(x)
+# print(newlist)
+
+
+# newlist = [x for x in fruits if "a" in x]
+# print(newlist)
+
+# newlist = [x.upper() for x in fruits]
+# print(newlist)
+
+# list1 = ["a", "b", "c"]
+# list2 = [1, 2, 3]
+
+# list3 = list1 + list2
+# print(list3)
+
+x = 'awesome'
+def myfunc():
+  global x
+  x = 'fantastic'
+myfunc()
+print('Python is ' + x)
+
+print(int(35.88))
+
+
+print(10 > 9)
+
+mylist = ['apple', 'banana', 'cherry']
+mylist[1:2] = ['kiwi', 'mango']
+print(mylist[2])
