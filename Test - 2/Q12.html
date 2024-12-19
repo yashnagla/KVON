@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q12 :- Toggle</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<body>
+    <button id="modeBtn">Change Mode</button>
+    <script>
+        let modeBtn = document.querySelector("#modeBtn");
+        let currMode = "light";
+        document.querySelector("body").style.display = "flex";
+        document.querySelector("body").style.justifyContent = "center";
+        document.querySelector("body").style.alignItems = "center";
+        document.querySelector("body").style.height = "100dvh";
+        document.querySelector("body").style.width = "100dvw";
+
+        document.querySelector("#modeBtn").style.padding = "10px 10px";
+        document.querySelector("#modeBtn").style.fontSize = "26px";
+        document.querySelector("#modeBtn").style.border = "none";
+        document.querySelector("#modeBtn").style.background = "#ffffff";
+
+        modeBtn.addEventListener("click", () => {
+            if(currMode === "light"){
+                currMode = "dark";
+                document.querySelector("body").style.background = "#302f2f";
+                document.querySelector("#modeBtn").style.background = "#302f2f";
+                document.querySelector("#modeBtn").style.color = "#eeeeee";
+            }else{
+                currMode = "light";
+                document.querySelector("body").style.background = "#eeeeee";
+                document.querySelector("#modeBtn").style.background = "#eeeeee";
+                document.querySelector("#modeBtn").style.color = "#302f2f";
+            }
+            console.log(currMode)
+        })
+    </script>
+    <script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>
+    

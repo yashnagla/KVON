@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+    <style>
+        #red {
+            background-color: red;
+            height: auto;
+            width: auto;
+            padding: 50px;
+        }
+
+        #green {
+            background-color: aquamarine;
+            padding: 50px;
+            width: auto;
+            height: auto;
+        }
+
+        #height {
+            height: 30px;
+        }
+    </style>
+    <title>Flex</title>
+</head>
+
+<body>
+    <!-- Equal Column Size In All Devices -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col bg-primary">col</div>
+            <div class="col bg-secondary">col</div>
+            <div class="col bg-success">col</div>
+            <div class="col bg-danger">col</div>
+        </div>
+    </div><br>
+
+    <!-- Columns with fix and custom size -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 bg-primary">col-6</div>
+            <div class="col-auto bg-secondary">col-auto</div>
+            <div class="col bg-success">col</div>
+            <div class="col bg-danger">col</div>
+        </div>
+    </div><br>
+
+    <!-- Equal Column Size In Custom Column Number -->
+    <div class="container-fluid">
+        <div class="row row-cols-3">
+            <div class="col bg-primary">row-cols-3</div>
+            <div class="col bg-secondary">row-cols-3</div>
+            <div class="col bg-success">row-cols-3</div>
+            <div class="col bg-danger">row-cols-3</div>
+        </div>
+    </div><br>
+
+    <!-- Custom Column Size With Custom Column Number with Auto Width -->
+    <div class="container-fluid">
+        <div class="row row-cols-auto">
+            <div class="col bg-primary">row-cols-auto</div>
+            <div class="col bg-secondary">row-cols-auto</div>
+            <div class="col bg-success">row-cols-auto</div>
+            <div class="col bg-danger">row-cols-auto</div>
+        </div>
+    </div><br>
+
+    <!-- Align Columns Horizontally -->
+    <div class="container-fluid">
+        <div class="row bg-warning" style="min-height: 200px; border: 1px solid black;">
+            <div class="col align-self-start bg-primary">align-self-start</div>
+            <div class="col align-self-center bg-secondary">align-self-center</div>
+            <div class="col align-self-end bg-success">align-self-end</div>
+        </div><br>
+        <div class="row align-items-center bg-warning" style="min-height: 200px; border: 1px solid black;">
+            <div class="col bg-primary">align-items-center</div>
+            <div class="col bg-secondary">align-items-center</div>
+            <div class="col bg-success">align-items-center</div>
+        </div><br>
+        <div class="row align-items-end bg-warning" style="min-height: 200px; border: 1px solid black;">
+            <div class="col bg-primary">align-items-end</div>
+            <div class="col bg-secondary">align-items-end</div>
+            <div class="col bg-success">align-items-end</div>
+        </div>
+    </div> <br>
+
+    <!-- Align Columns Vertically -->
+    <div class="container-fluid">
+        <div class="row bg-warning">
+            <div class="col-4 bg-primary">col-4</div>
+            <div class="col-4 bg-secondary">col-4</div>
+        </div><br>
+        <div class="row justify-content-end bg-warning">
+            <div class="col-4 bg-primary">justify-content-end</div>
+            <div class="col-4 bg-secondary">justify-content-end</div>
+        </div><br>
+        <div class="row justify-content-center bg-warning">
+            <div class="col-4 bg-primary">justify-content-center</div>
+            <div class="col-4 bg-secondary">justify-content-center</div>
+        </div><br>
+        <div class="row justify-content-start bg-warning">
+            <div class="col-4 bg-primary">justify-content-start</div>
+            <div class="col-4 bg-secondary">justify-content-start</div>
+        </div><br>
+        <div class="row justify-content-around bg-warning">
+            <div class="col-4 bg-primary">justify-content-around</div>
+            <div class="col-4 bg-secondary">justify-content-around</div>
+        </div><br>
+        <div class="row justify-content-evenly bg-warning">
+            <div class="col-4 bg-primary">justify-content-evenly</div>
+            <div class="col-4 bg-secondary">justify-content-evenly</div>
+        </div><br>
+    </div>
+
+</body>
+
+</html>

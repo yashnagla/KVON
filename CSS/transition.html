@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .btn{
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 0.5em 1em;
+            color: rgb(235, 61, 90);
+            background-color: rgb(253, 180, 192);
+            border: 10px solid rgb(235, 61, 90);
+            border-radius: 10px;
+            /* transition-property: transform;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s; */
+            /* transition: transform 0.3s ease-in-out 0s, background-color 0.3s, color 0.3s; */
+            transition: all 0.3s;
+        }
+        .btn:hover{
+            transform: translateY(10px);
+            background-color: rgb(235, 61, 90);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn">Learn More</button>
+</body>
+
+</html>

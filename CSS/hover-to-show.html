@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover To Show</title>
+    <style>
+        body{
+            height: 100dvh;
+            width: 100dvw;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .wraper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+        }
+        .div{
+            height: 100px;
+            width: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background: hotpink;
+            border-radius: 20px;
+
+            /* transform-origin: 0 0;
+            transform: translateX(-100px);
+            opacity: 0; */
+        }
+        .div1{transition-delay: 0ms;}
+        .div2{transition-delay: 100ms;}
+        .div3{transition-delay: 500ms;}
+        .div4{transition-delay: 1s;}
+        /* .wraper:is(:hover, :focus) .menu-item {
+            transform: translateX(0);
+            opacity: 100%;
+        } */
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="div div1">Hi, there</div>
+        <div class="div div2">Hi, there</div>
+        <div class="div div3">Hi, there</div>
+        <div class="div div4">Hi, there</div>
+    </div>
+</body>
+</html>

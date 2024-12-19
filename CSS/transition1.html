@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 100px;
+            height: 100dvh;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100px;
+            background: red;
+            border-radius: 20px;
+            transition-property: transform;
+            transition-timing-function: ease;
+        }
+        
+        .div1:hover{
+            transform: scale(1.1);
+            transition-timing-function: ease-in-out;
+            transition-duration: 0s;}        
+        .div2:hover{
+            transform: scale(1.1);
+            transition-timing-function: ease-in-out;
+            transition-duration: 200ms;}        
+        .div3:hover{
+            transform: scale(1.1);
+            transition-timing-function: ease-in-out;
+            transition-duration: 800ms;}        
+        .div4:hover{
+            transform: scale(1.1);
+            transition-timing-function: ease-in-out;
+            transition-duration: 1s;}
+    </style>
+</head>
+
+<body>
+    <div class="div1">instant</div>
+    <div class="div2">200ms</div>
+    <div class="div3">800ms</div>
+    <div class="div4">glacial</div>
+</body>
+
+</html>

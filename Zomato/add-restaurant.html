@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Restaurant</title>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrp CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="add-restaurant">
+
+        <!-- NavBar -->
+        <section class="d-flex justify-content-center">
+            <header class="header container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container d-flex" style="flex-direction: row;">
+                        <div class="d-flex" style="height: 40px;">
+                            <img src="./img/white_logo.png" alt="">
+                        </div>
+                        <div class="d-flex">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-list">
+                                <li class="nav-item">
+                                    <div class="nav-link text-white" aria-current="page" href="#">Need Help? Call <a href="tel:+919738383838" class="ml-1">+91 97-38-38-38-38</a></div>
+                                </li>
+                                <div class="rounded-5 btn px-6 py-2 text-light border border-1 border-white"><a href="./login.html">Login</a></div>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </section>
+
+        <!-- Main Section -->
+        <section style="position: relative;">
+            <img style="position: absolute; z-index: -1; width: 100vw;" src="./img/2.png" alt="">
+            <div class="main-add-restaurant mb-4">
+                <div>
+                    <h4>Partner with Zomato <br> and grow your busniess</h4>
+                </div>
+                <div>
+                    <p>0% commission for the 1st month for new restaurant partners in selected cities.</p>
+                </div>
+                <section>
+                    <button class="btn" type="button">Register you Restaurant</button>
+                </section>
+            </div>
+        </section>
+
+        <div class="body">
+
+            <div class="get-started mb-3">
+                <div class="row g-0" style="padding: 20px; max-width: fit-content; border-radius: 20px;">
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h5 class="card-title">Get Started - It only takes 10 minutes</h5>
+                            <p class="card-text">Please be ready with the following for a smooth registration</p>
+                            <div class="row row-cols-2 d-flex">
+                                <div class="col">
+                                    <i class="bi bi-check-circle-fill text-success"></i> PAN card
+                                </div>
+                                <div class="col">
+                                    <i class="bi bi-check-circle-fill text-success"></i> Menu details and one dish image
+                                </div>
+                                <div class="col">
+                                    <i class="bi bi-check-circle-fill text-success"></i> GST number, if applicable <br>
+                                    <span>Require a GST? <a href="#">Apply here</a></span>
+                                </div>
+                                <div class="col">
+                                    <i class="bi bi-check-circle-fill text-success"></i> FSSAI licence <br>
+                                    <span>Don't have a FSSAI licence? <a href="#">Apply here</a></span>
+                                </div>
+                                <div class="col">
+                                    <i class="bi bi-check-circle-fill text-success"></i> Bank account details
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5"
+                        style="display: flex; justify-content: center; align-items: center; padding-left: 55px; height: 210px; margin: auto;">
+                        <video controls src="./videos/5835a67ef0191da3b505988b3ff9a0141720502359.mp4" class="h-100" style="border-radius: 1rem;" autoplay alt="video"></video>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Section -->
+            <section class="why-section">
+                <div class="row d-flex" style="flex-direction: row;">
+                    <div class="col-2 line"></div>
+                    <div class="col-8 text">Why should you partner with Zomato?</div>
+                    <div class="col-2 line"></div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex text-center" style="flex-direction: column;">
+                        <i class="bi bi-people"></i>
+                        <div style="font-size: 1.69rem; line-height: 1.5rem; font-weight: 600; margin-top: 2rem;">
+                            Attract new customer</div>
+                        <div style="margin-top: 0.75rem; color:rgb(89, 103, 56);">Reach the millions of people ordering
+                            on Zomato</div>
+                    </div>
+                    <div class="col d-flex text-center" style="flex-direction: column;">
+                        <i class="bi bi-box"></i>
+                        <div style="font-size: 1.69rem; line-height: 1.5rem; font-weight: 600; margin-top: 2rem;">
+                            Doorstep delivery convenience</div>
+                        <div style="margin-top: 0.75rem; color:rgb(89, 103, 56);">Easily get your orders delivered
+                            through our trained delivery partners</div>
+                    </div>
+                    <div class="col d-flex text-center" style="flex-direction: column;">
+                        <i class="bi bi-headset"></i>
+                        <div style="font-size: 1.69rem; line-height: 1.5rem; font-weight: 600; margin-top: 2rem;">
+                            Hotline support</div>
+                        <div style="margin-top: 0.75rem; color:rgb(89, 103, 56);">On-call support for any issues or
+                            growth consultations</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Success Stories Section -->
+            <div class="success-stories">
+                <h4>Restaurant success stories</h4>
+                <div id="multiImageCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">Zomato enabled me to restart my operations post-COVID when I
+                                        had no hope of doing my business again. I'm grateful to the platform for helping
+                                        me thrive - my online ordering business has done so well, it has even taken over
+                                        my dining business!</p>
+                                </div>
+                                <div class="line2"></div>
+                                <div class="row">
+                                    <div class="col-3 px-4">
+                                        <img src="./img/Stories/1.png" height="60px" alt="">
+                                    </div>
+                                    <div class="col-8 d-flex" style="flex-direction: column;">
+                                        <p class="name">Arshad Khan</p>
+                                        <p class="about">Owner - Khushboo biryani, <br> Shilong</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">Thanks to Zomato's invaluable support, our startup cloud
+                                        kitchen has been doing wonders in the competitive food industry landscape. Their
+                                        dedication to promoting local businesses and powerful reporting tools have been
+                                        instrumental in our success, and we look forward to a long-term partnership.</p>
+                                </div>
+                                <div class="line2"></div>
+                                <div class="row">
+                                    <div class="col-3 px-4">
+                                        <img src="./img/Stories/2.png" height="60px" alt="">
+                                    </div>
+                                    <div class="col-8 d-flex" style="flex-direction: column;">
+                                        <p class="name">Vijay</p>
+                                        <p class="about">Owner - Birgo, <br>Coimbatore</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">Zomato helped us grow by 60% since registration, and now, we
+                                        are one of the biggest vegetarian joints in Ernakulam city.</p>
+                                </div>
+                                <div class="line2"></div>
+                                <div class="row">
+                                    <div class="col-3 px-4">
+                                        <img src="./img/Stories/3.png" height="60px" alt="">
+                                    </div>
+                                    <div class="col-8 d-flex" style="flex-direction: column;">
+                                        <p class="name">Sandeep K Mohan</p>
+                                        <p class="about">Owner - Mysore Raman Idli, <br> Kerala</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#multiImageCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#multiImageCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq">
+            <div class="faq-title">Frequently asked questions</div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            What are the documents and details required to start deliveries through Zomato?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p style="font-weight: bold;">Mandatory documents:</p>
+                            <ul>
+                                <li>PAN Card: <span>Only adult PAN cards are accepted</span></li>
+                                <li>FSSAI license certificate: <a href="#"> Apply now</a></li>
+                                <li>Bank details: <span>A copy of your cheque or passbook.</span></li>
+                                <li>Restaurant's delivery menu</li>
+                                <li>One food image: <span>Used as your restaurant's cover image on Zomato.</span></li>
+                            </ul>
+                        </div>
+                        <div class="accordion-body">
+                            <p style="font-weight: bold;">Optional documents:</p>
+                            <ul>
+                                <li>GST certificate: <span>If applicable based on the PAN provided</span><a href="#"></a> Apply now</a></li>
+                            </ul>.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How long will it take for a restaurant to go live on Zomato after submitting the documents?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="">
+                                <p>Once all mandatory documents are uploaded and the contract is accepted, our team
+                                    typically takes around 24 hours to verify the documents and build your menu.</p>
+                                <ul class="list-unstyle text-decoration-none">
+                                    <li>If all documents are correct, your restaurant will be ready to accept orders
+                                        within 24 hours.</li>
+                                    <li>If any document is rejected, the go-live process will be delayed until you
+                                        resubmit the correct documents.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What is the one-time onboarding fee? Do I have to pay it at the time of registration?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="">
+                                <p>The one-time onboarding fee covers administrative, operational, and technical
+                                    services, including document verification, menu digitization, quality checks,
+                                    training on using the Zomato platform, and query resolutions. <br> This fee will be
+                                    deducted from your statement of accounts only after your restaurant goes live on
+                                    Zomato and starts receiving online orders.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            How can I get help and support from Zomato if I get stuck?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="">
+                                <p>The Zomato team is here to assist you.</p>
+                                <p>You can reach us in two ways:</p>
+                                <ul>
+                                    <li>Call our support helpline at <a
+                                            href="tel:+91-97-38-38-38-38">+91-97-38-38-38-38</a> between 10 AM - 7 PM
+                                        for immediate assistance.</li>
+                                    <li>Email us at <a
+                                            href="mailto:merchantonboarding@zomato.com">merchantonboarding@zomato.com</a>,
+                                        and we’ll resolve your query within 6 hours.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            How much commission will I be charged by Zomato?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="">
+                                <p>Zomato charges a commission for services such as order placement, catalog hosting,
+                                    demand generation, marketing, logistics, tech infrastructure, and customer support.
+                                    <br> The commission rates vary based on the city and the restaurant, depending on
+                                    factors like location and cuisine. You can view your specific commission rate when
+                                    you accept the online ordering contract.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            How will I get my payouts?
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="">
+                                <p>Newly registered restaurants on Zomato receive weekly payouts every Wednesday for
+                                    transactions made from Monday to Sunday of the previous week. If you prefer daily
+                                    payouts, you can request them through the Help Centre on the partner app once your
+                                    restaurant is live for online ordering.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="row footer" style="background-color: rgb(244, 246, 251); margin: 0; width: 100%; padding: 4rem 0rem;">
+        <div style="margin: 0 auto; max-width: 80%;">
+            <div class="row">
+                <div class="col-6">
+                    <img src="./img/dark_logo.png" alt="">
+                </div>
+                <div class="col-6 d-flex justify-content-end mb-5">
+                    <div class="text-primary rounded-pill"
+                        style="border: 1px solid rgb(229, 231, 235); background: white; padding: 20px 30px;">
+                        <i class="bi bi-envelope"></i>
+                        <a href="mailto:merchantonboarding@zomato.com?subject=">merchantonboarding@zomato.com</a>
+                    </div>
+                    <div class="text-primary rounded-pill"
+                        style="border: 1px solid rgb(229, 231, 235); background: white; padding: 20px 30px;">
+                        <i class="bi bi-envelope"></i>
+                        <a href="tel:+919738383838">+919738383838</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex justify-content-start">
+                    <div class="row">
+                        <div class="col">
+                            <h5>ABOUT ZOMATO</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="text-decoration-none text-secondary" href="#">Who We Are</a></li>
+                                <li><a class="text-decoration-none text-secondary" href="#">Blog</a></li>
+                                <li><a class="text-decoration-none text-secondary" href="#">Work With Us</a></li>
+                                <li><a class="text-decoration-none text-secondary" href="#">Investor Relations</a></li>
+                                <li><a class="text-decoration-none text-secondary" href="#">Report Fraud</a></li>
+                                <li><a class="text-decoration-none text-secondary" href="#">Press Kit</a></li>
+                                <li><a class="text-decoration-none text-secondary" href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>ZOMAVERSE</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="text-decoration-none text-secondary" href="#">Zomato</a></li>
+                                <li><a class="text-decoration-none text-secondary" href="#">Blinkit</a></li>
+                                <li><a class="text-decoration-none text-secondary" href="#">Feeding India</a></li>
+                                <li><a class="text-decoration-none text-secondary" href="#">Hyperpure</a></li>
+                                <li><a class="text-decoration-none text-secondary" href="#">Zomato Live</a></li>
+                                <li><a class="text-decoration-none text-secondary" href="#">Zomaland</a></li>
+                                <li><a class="text-decoration-none text-secondary" href="#">Weather Union</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>FOR RESTAURANTS</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="text-decoration-none text-secondary" href="#">Partner With Us</a></li>
+                                <li><a class="text-decoration-none text-secondary" href="#">Apps For You</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>LEARN MORE</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="text-decoration-none text-secondary" href="#">Privacy</a></li>
+                                <li><a class="text-decoration-none text-secondary" href="#">Security</a></li>
+                                <li><a class="text-decoration-none text-secondary" href="#">Terms</a></li>
+                                <li><a class="text-decoration-none text-secondary" href="#">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <div class="col social fs-5">
+                        <div>
+                            <h5>SOCIAL MEDIA</h5>
+                        </div>
+                        <div>
+                            <i class="bi bi-linkedin"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-twitter-x"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-facebook"></i>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img style="margin-bottom: 10px; height: 40px; width: 120px;"
+                                    src="./img/google-play.png" class="download-img img-fluid">
+                            </a>
+                            <a href="#">
+                                <img src="./img/apple-store.png" style="height: 40px; width: 120px;"
+                                    class="download-img img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

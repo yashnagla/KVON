@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+    <style>
+        #red {
+            background-color: red;
+            height: auto;
+            width: auto;
+            padding: 50px;
+        }
+
+        #green {
+            background-color: aquamarine;
+            padding: 50px;
+            width: auto;
+            height: auto;
+        }
+
+        #height{
+            height: 30px;
+        }
+    </style>
+    <title>Basics - Grid</title>
+</head>
+
+<body>
+    <!-- Container -->
+    <!-- Container Fluid Give 100% Width -->
+    <div class="container-fluid" id="red">
+        <h1>Container Fluid</h1>
+    </div>
+
+    <!-- Container Fluid Give dontainer_width= 100%-Width -->
+    <div class="container" id="red">
+        <h1>Container</h1>
+    </div>
+
+    <!-- Row -->
+    <div class="container" id="red">
+        <div class="row" id="green">Row</div>
+    </div>
+
+    <!-- Background Color -->
+    <div class="bg-success text-white">
+        <h1>bg-success text-white</h1>
+    </div>
+
+    <!-- Bootstrap Flow -->
+    <!-- container>row>col -->
+    <div class="container" id="red">
+        <div class="row" id="green">
+            <div class="col-6 bg-primary text-white" id="height">Col-6</div>
+            <div class="col-4 bg-success text-white" id="height">Col-4</div>
+            <div class="col-2 bg-secondary text-white" id="height">Col-2</div>
+        </div>
+    </div>
+
+    <div class="container" id="green">
+        <div class="row" id="red">
+            <div class="col-6 bg-primary text-white" id="height">Col-6</div>
+            <div class="col-4 bg-success text-white" id="height">Col-4</div>
+            <div class="col-5 bg-secondary text-white" id="height">Col-5</div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="red"></div>
+        <div class="row" id="green">
+            <div class="col-xl-5 col-lg-6 col-md-6 col-sm-8 col-6 bg-primary text-white" id="height">col-xl-5 col-lg-6 col-md-6 col-sm-8 col-6</div>
+            <div class="col-xl-5 col-lg-4 col-md-3 col-sm-4 col-6 bg-success text-white" id="height">col-xl-5 col-lg-4 col-md-3 col-sm-4 col-6</div>
+            <div class="col-lg-2 col-md-3 col-sm-6 bg-secondary text-white" id="height">col-lg-2 col-md-3 col-sm-6</div>
+        </div>
+    </div>
+
+    <!-- Nested Column -->
+    <div class="container-fluid" id="red">
+        <div class="row" id="green">
+            <div class="col-4 text-white bg-secondary">
+                col-4 text-white bg-secondary
+            </div>
+            <div class="col-8 text-white bg-success">
+                col-8 text-white bg-success
+                <div class="row bg-warning" id="green">
+                    <div class="col-4 text-white bg-primary">col-4 text-white bg-primary</div>
+                    <div class="col-4 text-white bg-success">col-4 text-white bg-success</div>
+                    <div class="col-4 text-white bg-secondary">col-4 text-white bg-secondary</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="./Bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

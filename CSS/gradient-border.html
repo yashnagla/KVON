@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Border</title>
+    <style>
+        body{
+            background: black;
+        }
+        .card{
+            margin: 0 auto;
+            color: white;
+            padding: 2em;
+            width: 300px;
+            background: #1c1f2b;
+            text-align: center;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        @property --angle{
+            syntax: "<angle>";
+            initial-value: 0deg;
+            inherits: false;
+        }
+
+        .card::after, .card::before{
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-image: conic-gradient(from var(--angle), transparent 10%, #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+            /* background-image: conic-gradient(from var(--angle), transparent 40%, rgb(0, 255, 64), rgb(220, 255, 192)); */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            padding: 10px;
+            border-radius: 10px;
+            animation: 5s spin linear infinite;
+        }
+        .card::before{
+            filter: blur(1.5rem);
+            opacity: 0.9;
+        }
+        @keyframes spin {
+            from{
+                --angle: 0deg;
+            }
+            to{
+                --angle: 360deg;
+            }            
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Animated Border</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum inventore cupiditate obcaecati alias eos vero dignissimos excepturi voluptatum? Dicta est aliquam architecto repellat voluptates atque officia voluptatibus odit animi et voluptatem laboriosam odio veniam deleniti in, iure illo alias deserunt magni quisquam quibusdam dolorem dolore! Sit aperiam molestias sapiente laudantium!</p>
+    </div>
+</body>
+</html>

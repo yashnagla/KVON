@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar with Search Bar</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <style>
+    .navbar .form-inline {
+      flex-grow: 1;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 500px) {
+      img {
+        height: 30px !important;
+      }
+
+      .bts {
+        width: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Aside -->
+  <aside class="side-mini-panel with-vertical d-md-none">
+    <!-- ---------------------------------- -->
+    <!-- Start Vertical Layout Sidebar -->
+    <!-- ---------------------------------- -->
+    <div class="iconbar" style="position: fixed;">
+      <div>
+        <div class="sidebarmenu close" style="
+    position: fixed;">
+          <div class="brand-logo d-flex align-items-center nav-logo">
+            <a href="https://lokohub.com" class="text-nowrap logo-img">
+              <img src="https://lokohub.com/front_end_new/images/logo.svg" class="header-logo" alt="Lokohub">
+            </a>
+
+          </div>
+          <nav class="sidebar-nav d-block" id="menu-right-mini-1" data-simplebar="init">
+            <div class="simplebar-wrapper" style="margin: 0px -20px -24px;">
+              <div class="simplebar-height-auto-observer-wrapper">
+                <div class="simplebar-height-auto-observer"></div>
+              </div>
+              <div class="simplebar-mask">
+                <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                  <div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content"
+                    style="height: 100%; overflow: hidden;">
+                    <div class="simplebar-content" style="padding: 0px 20px 24px;">
+                      <div class="card-body text-center border-bottom">
+
+                        <div class="position-relative overflow-hidden d-inline-block">
+                          <img src="https://lokohub.com/front_end_new/images/nouser.jpg" alt="matdash-img"
+                            class="img-fluid mb-4 rounded-circle position-relative" width="140">
+
+                        </div>
+                        <h5 class="fw-semibold fs-5 mb-2">Tommoie Henderson1 </h5>
+                        <p class="mb-3 px-xl-5">Accept the request and type a message</p>
+
+                      </div>
+                      <ul class="sidebar-menu" id="sidebarnav">
+
+                        <li class="sidebar-item">
+                          <a class="sidebar-link active" href="./" id="get-url" aria-expanded="false">
+                            <iconify-icon icon="solar:atom-line-duotone"></iconify-icon>
+                            <span class="hide-menu">Add Listing</span>
+                          </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                          <a class="sidebar-link" href="../minisidebar/index2.html" aria-expanded="false">
+                            <iconify-icon icon="solar:chart-line-duotone"></iconify-icon>
+                            <span class="hide-menu">Terms and Conditions</span>
+                          </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                          <a class="sidebar-link" href="../minisidebar/index3.html" aria-expanded="false">
+                            <iconify-icon icon="solar:screencast-2-line-duotone"></iconify-icon>
+                            <span class="hide-menu">Privacy Ploicy</span>
+                          </a>
+                        </li>
+
+                        <li>
+                          <span class="sidebar-divider"></span>
+                        </li>
+
+                        <li class="nav-small-cap">
+                          <span class="hide-menu">Apps</span>
+                        </li>
+
+                        <li class="sidebar-item">
+                          <a class="sidebar-link has-arrow" href="javascript:void(0)" aria-expanded="false">
+                            <iconify-icon icon="solar:cart-3-line-duotone"></iconify-icon>
+                            <span class="hide-menu">Ecommerce</span>
+                          </a>
+                          <ul aria-expanded="false" class="collapse first-level">
+                            <li class="sidebar-item">
+                              <a class="sidebar-link" href="../minisidebar/eco-shop.html">
+                                <span class="icon-small"></span> Shop
+                              </a>
+                            </li>
+                            <li class="sidebar-item">
+                              <a class="sidebar-link" href="../minisidebar/eco-shop-detail.html">
+                                <span class="icon-small"></span>Details
+                              </a>
+                            </li>
+                            <li class="sidebar-item">
+                              <a class="sidebar-link" href="../minisidebar/eco-product-list.html">
+                                <span class="icon-small"></span>List
+                              </a>
+                            </li>
+                            <li class="sidebar-item">
+                              <a class="sidebar-link" href="../minisidebar/eco-checkout.html">
+                                <span class="icon-small"></span>Checkout
+                              </a>
+                            </li>
+                            <li class="sidebar-item">
+                              <a class="sidebar-link" href="../minisidebar/eco-add-product.html">
+                                <span class="icon-small"></span>Add Product
+                              </a>
+                            </li>
+                            <li class="sidebar-item">
+                              <a class="sidebar-link" href="../minisidebar/eco-edit-product.html">
+                                <span class="icon-small"></span>Edit Product
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sidebar-item">
+                          <a class="sidebar-link" href="../minisidebar/app-invoice.html"><iconify-icon
+                              icon="solar:bill-list-line-duotone"></iconify-icon>Invoice</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="simplebar-placeholder" style="width: auto; height: 597px;"></div>
+            </div>
+            <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+              <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+            </div>
+            <div class="simplebar-track simplebar-vertical" style="visibility: hidden;">
+              <div class="simplebar-scrollbar" style="height: 0px; display: none;"></div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Header -->
+  <header class="topbar container-fluid border-bottom">
+    <div class="with-vertical">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://lokohub.com/front_end_new/images/logo.svg" style="height: 40px;" class="w-40 header-logo" alt="Lokohub">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="form-inline">
+                    <li class="text-dark dropdown my-2 my-lg-0 d-none d-sm-block border">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Location
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                    <!-- <form class="my-2 my-lg-0 d-none d-sm-block" role="search">
+                        <i class="bi bi-geo-alt"></i>
+                        <input class="form-control me-2" type="search" placeholder="Jaipur" aria-label="Search">
+                    </form> -->
+                    <form class="my-2 my-lg-0 d-flex bts justify-content-center" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <i class="bi bi-mic-fill p-2"></i>
+                        <button class="btn" type="submit" id="searchbtn" style="background-color: #fe610c;">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <ul class="row d-flex justify-content-center bts p-0" style="list-style: none;">
+                    <li class="col nav-item pt-1 ps-1 row" style="padding-left: 5%;">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle text-dark" style="display: flex;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-translate"></i><span class="d-none d-sm-block" style="padding-left: 5px;"> EN</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-decoration-none" href="#">ही - Hindi</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="col nav-item pt-1">
+                        <a class="nav-link text-decoration-none text-dark" style="display: flex;" aria-current="page" href="#"><i class="bi bi-megaphone"></i><span class="d-none d-sm-block" style="padding-left: 5px;"> Advertise</span></a>
+                    </li>
+                    <li class="col nav-item pt-1">
+                        <a class="nav-link text-decoration-none text-dark" style="display: flex;" href="#"><i class="bi bi-graph-up-arrow"></i><span class="d-none d-sm-block" style="padding-left: 5px;"> Free Listings</span></a>
+                    </li>
+                    <li class="col nav-item pt-1">
+                        <a class="nav-link text-decoration-none text-dark" style="display: flex;" href="#"><i class="bi bi-bell"></i></a>
+                    </li>
+                </ul>
+                <div class="container-button d-flex justify-content-center">
+                    <a class="nav-link link-dark" href="#"><button class="btn btn-primary button">Login / Signup</button> </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+      <!-- ---------------------------------- -->
+      <!-- End Vertical Layout Header -->
+      <!-- ---------------------------------- -->
+
+
+    </div>
+    <div class="app-header with-horizontal">
+      <nav class="navbar navbar-expand-xl container-fluid p-0">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item d-flex d-xl-none">
+            <a class="nav-link sidebartoggler nav-icon-hover-bg rounded-circle" id="sidebarCollapse"
+              href="javascript:void(0)"><i class="fa-solid fa-bars 02" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item d-none d-xl-flex align-items-center">
+            <a href="../minisidebar/index.html" class="text-nowrap nav-link">
+              <img src="../assets/images/logos/logo.svg" class="header-logo" alt="matdash-img">
+            </a>
+          </li>
+          <li class="nav-item d-none d-xl-flex align-items-center nav-icon-hover-bg rounded-circle">
+            <a class="nav-link" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                class="fa-solid fa-bars 06" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+        <a class="navbar-toggler nav-icon-hover p-0 border-0 nav-icon-hover-bg rounded-circle" href="javascript:void(0)"
+          data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="p-2">
+            <i class="ti ti-dots fs-7"></i>
+          </span>
+        </a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div class="d-flex align-items-center justify-content-between px-0 px-xl-8">
+            <ul class="navbar-nav flex-row mx-auto ms-lg-auto align-items-center justify-content-center">
+
+              <li class="nav-item">
+                <a class="nav-link nav-icon-hover-bg rounded-circle moon dark-layout" href="javascript:void(0)"
+                  style="display: flex;">
+                  <iconify-icon icon="solar:moon-line-duotone" class="moon fs-6" style="display: flex;"></iconify-icon>
+                </a>
+                <a class="nav-link nav-icon-hover-bg rounded-circle sun light-layout" href="javascript:void(0)"
+                  style="display: none">
+                  <iconify-icon icon="solar:sun-2-line-duotone" class="sun fs-6" style="display: none;"></iconify-icon>
+                </a>
+              </li>
+              <li class="nav-item d-block d-xl-none">
+                <a class="nav-link nav-icon-hover-bg rounded-circle" href="javascript:void(0)" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                  <iconify-icon icon="solar:magnifer-line-duotone" class="fs-6"></iconify-icon>
+                </a>
+              </li>
+
+
+              <!-- ------------------------------- -->
+              <!-- start profile Dropdown -->
+              <!-- ------------------------------- -->
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="javascript:void(0)" id="drop1" aria-expanded="false">
+                  <div class="d-flex align-items-center gap-2 lh-base">
+                    <img src="../assets/images/profile/user-1.jpg" class="rounded-circle" width="35" height="35"
+                      alt="matdash-img">
+                    <iconify-icon icon="solar:alt-arrow-down-bold" class="fs-2"></iconify-icon>
+                  </div>
+                </a>
+                <div class="dropdown-menu profile-dropdown dropdown-menu-end dropdown-menu-animate-up"
+                  aria-labelledby="drop1">
+                  <div class="position-relative px-4 pt-3 pb-2">
+                    <div class="d-flex align-items-center mb-3 pb-3 border-bottom gap-6">
+                      <img src="../assets/images/profile/user-1.jpg" class="rounded-circle" width="56" height="56"
+                        alt="matdash-img">
+                      <div>
+                        <h5 class="mb-0 fs-12">David McMichael <span class="text-success fs-11">Pro</span>
+                        </h5>
+                        <p class="mb-0 text-dark">
+                          david@wrappixel.com
+                        </p>
+                      </div>
+                    </div>
+                    <div class="message-body">
+                      <a href="../minisidebar/page-user-profile.html" class="p-2 dropdown-item h6 rounded-1">
+                        My Profile
+                      </a>
+                      <a href="../minisidebar/page-pricing.html" class="p-2 dropdown-item h6 rounded-1">
+                        My Subscription
+                      </a>
+                      <a href="../minisidebar/app-invoice.html" class="p-2 dropdown-item h6 rounded-1">
+                        My Invoice <span class="badge bg-danger-subtle text-danger rounded ms-8">4</span>
+                      </a>
+                      <a href="../minisidebar/page-account-settings.html" class="p-2 dropdown-item h6 rounded-1">
+                        Account Settings
+                      </a>
+                      <a href="../minisidebar/authentication-login2.html" class="p-2 dropdown-item h6 rounded-1">
+                        Sign Out
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- ------------------------------- -->
+              <!-- end profile Dropdown -->
+              <!-- ------------------------------- -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <section class="top-section">
+        <!-- <div class="navbar navbar-expand-lg"> -->
+            <div class="container-fluid d-flex flex-row justify-content-between px-3 py-3 align-items-center w-100" style="padding: 1% 5%;">
+                <div class="d-flex flex-row gap-4">
+                    <div class="fs-4"><a href="./dashboard.html"><i class="fa-solid fa-arrow-left"></i></a></div>
+                    <div class="fs-4">Book Profile</div>
+                    <div class="fs-4"><i class="fa-solid fa-pen title-icon"></i></div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </section>
+    
+    <section class="profile-main-section">
+        <div class="container-fluid profile-section">
+            <div class="border border-1 border-secondary m-2 rounded-3">
+                <div class="px-3">
+                    <!-- User Image -->
+                    <div class="row mt-3 fs-4">
+                        <div class="user_camera_size" >
+                            <img src="./user.png" class="user_img_size img-fluid mx-auto d-block">
+                            <img src="./camera.png" class="camera_img_size">
+                            <a href="" src=""></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Profile Strength -->
+                    <div class="profile-strength fs-4">
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-danger" style="width: 14%;"></div>
+                        </div>
+                        <p class="mt-2 ">Profile strength: <span style="color: rgb(146, 23, 23);">Weak</span></p>
+                    </div>
+                    
+                    <!-- Personal Info -->
+                    <div class="personal_info fs-4" style="background-color: rgb(238, 232, 232);">
+                        <p class="p-2 text-center text-secondary bg-grey">Personal Info</p>
+                    </div>
+    
+                    <!-- Name -->
+                    <div class="row mt-4 align-items-center fs-4">                                                  
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-2 ms-md-3 ms-sm-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                            </svg>
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-9 col-9">
+                            <div style="color:gray;">Name</div>
+                            <div>John</div>
+                        </div>
+                    </div>
+                    <hr>
+    
+                    <!-- Number -->
+                    <div class="row mt-4 fs-4 align-items-center">
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-2 ms-md-3 ms-sm-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                            </svg>
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-9 col-9">
+                            <div style="color:gray;">Registered number</div>
+                            <div>0123456789</div>
+                        </div>
+                    </div>
+                    <hr>
+    
+                    <!-- Business -->
+                    <div class="row my-4 fs-4 align-items-center">
+                        <div class="col-lg-1 col-md-1 col-sm-2 col-2 ms-md-3 ms-sm-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
+                            </svg>
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-9 col-9">
+                            <div style="color:gray;">Business name</div>
+                            <div>My Business</div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ae86c4f0b6.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

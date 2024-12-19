@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Timeline</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .timeline {
+            position: relative;
+            padding: 0;
+            list-style: none;
+        }
+        .timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            margin-left: -1px;
+            background-color: rgb(255, 162, 157);
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+        }
+        .timeline-item:before,
+        .timeline-item:after {
+            content: "";
+            display: table;
+        }
+        .timeline-item:after {
+            clear: both;
+        }
+
+        .timeline-date{
+            position: relative;
+            float: right;
+            right: 230px;
+            top: 25px;
+        }
+
+        .timeline-item .timeline-marker {
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 1.4em;
+            text-align: center;
+            position: absolute;
+            top: 16px;
+            left: 50%;
+            margin-left: -25px;
+            background-color: rgb(255, 162, 157);
+            z-index: 100;
+            border-radius: 50%;
+        }
+
+        .timeline-panel {
+            left: 76px;
+        }
+
+        .timeline-item .timeline-panel {
+            float: left;
+            border: 1px solid #d4d4d4;
+            border-radius: 5px;
+            padding: 20px;
+            position: relative;
+            background: #ffffff;
+        }
+        .timeline-item .timeline-panel:before {
+            position: absolute;
+            top: 26px;
+            right: -15px;
+            display: inline-block;
+            border-top: 15px solid transparent;
+            border-left: 15px solid #ccc;
+            border-right: 0 solid #ccc;
+            border-bottom: 15px solid transparent;
+            content: " ";
+        }
+        .timeline-item .timeline-panel:after {
+            position: absolute;
+            top: 27px;
+            right: -14px;
+            display: inline-block;
+            border-top: 14px solid transparent;
+            border-left: 14px solid #fff;
+            border-right: 0 solid #fff;
+            border-bottom: 14px solid transparent;
+            content: " ";
+        }
+        .timeline-item:nth-child(even) .timeline-panel {
+            float: right;
+        }
+        .timeline-item:nth-child(even) .timeline-panel:before {
+            border-left-width: 0;
+            border-right-width: 15px;
+            left: -15px;
+            right: auto;
+        }
+        .timeline-item:nth-child(even) .timeline-panel:after {
+            border-left-width: 0;
+            border-right-width: 14px;
+            left: -14px;
+            right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-3">Academic</h1>
+        <p class="text-center text-muted mb-5">My educational background</p>
+        
+        <div class="timeline">
+            <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-panel">
+                    <h5>Master of Computer Application</h5>
+                    <p class="text-muted">University of Rajasthan, Jaipur</p>
+                    <p class="text-success">Scored 83.25%</p>
+                </div>
+                <div class="timeline-date text-end">
+                    <h4>December, 2006</h4>
+                </div>
+            </article>
+            <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-panel">
+                    <h5>B.Sc. (Mathematics)</h5>
+                    <p class="text-muted">University of Rajasthan, Jaipur</p>
+                    <p class="text-success">Scored 65.25%</p>
+                </div>
+                <div class="timeline-date">
+                    <h4>June, 2003</h4>
+                </div>
+            </article>
+            <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-panel">
+                    <h5>Higher Secondary Education</h5>
+                    <p class="text-muted">Board Of Secondary Education, Rajasthan, Ajmer</p>
+                    <p class="text-success">Scored 59.45%</p>
+                </div>
+                <div class="timeline-date text-end">
+                    <h4>June, 2000</h4>
+                </div>
+            </article>
+            <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-panel">
+                    <h5>Senior Secondary Education</h5>
+                    <p class="text-muted">Board Of Secondary Education, Rajasthan, Ajmer</p>
+                    <p class="text-success">Scored 74.25%</p>
+                </div>
+                <div class="timeline-date">
+                    <h4>April, 1998</h4>
+                </div>
+            </article>
+        </div>
+    </div>
+</body>
+</html>

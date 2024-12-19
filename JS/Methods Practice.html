@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Practice Question</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>Hi Every One!</h1>
+
+    <script>
+
+        // Q. We are given array of marks of students. Filter out the marks of students that scored 90+.
+
+        let marks = [67, 52, 39, 90, 91, 92, 5, 98, 94, 100];
+        let higestMarks = marks.filter((val) => {
+            return val >= 90;
+        });
+        console.log(higestMarks)
+
+        // Qs. (i) Take a number n as input from user. Create an array of numbers from 1 to n. 
+        //     (ii) Use the reduce method to calculate sum of all numbers in the array.
+        //     (iii) Use the reduce method to calculate product of all numbers in the array.
+
+        // Filter Method
+        let n = prompt("Enter a number :- ");
+        let arr = [];
+        for(let i = 0; i <= n; i++){
+            arr[i-1] = i;
+        }
+        console.log(arr);
+
+        // Reduce Method
+        let sumArr = arr.reduce((accumulator, currentValue) => {
+            return accumulator+currentValue;
+        })
+        console.log(sumArr);
+
+        // Reduce Method
+        let multiplyArr = arr.reduce((accumulator, currentValue) => {
+            return accumulator*currentValue;
+        })
+        console.log(multiplyArr);
+    </script>
+</body>
+
+</html>

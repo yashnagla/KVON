@@ -1,0 +1,201 @@
+/* Add Restaurant Page */
+.add-restaurant .btn {
+    border-radius: 20px;
+}
+
+.main-add-restaurant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.05);
+    opacity: 1;
+    transition: 1.4s;
+    z-index: -1;
+    height: 627px;
+}
+
+.main-add-restaurant button {
+    background: rgb(37, 111, 239);
+    color: white;
+    padding: 20px;
+
+}
+
+.main-add-restaurant h4 {
+    color: black;
+}
+
+.main-add-restaurant p {
+    color: rgb(65 74 93);
+}
+
+.add-restaurant .body ul {
+    display: flex;
+}
+
+.add-restaurant .body div>div {
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(28, 28, 28);
+}
+
+.add-restaurant .body div>span {
+    color: rgb(145, 151, 166);
+    font-weight: 500;
+}
+
+.add-video video {
+    height: 175px;
+    border-radius: 10px;
+}
+
+.get-started {
+    display: flex;
+    justify-content: center;
+    margin-top: -10%;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.11), 0px 2px 2px 0px rgba(0, 0, 0, 0.11), 0px 4px 4px 0px rgba(0, 0, 0, 0.11), 0px 8px 8px 0px rgba(0, 0, 0, 0.11), 0px 16px 16px 0px rgba(0, 0, 0, 0.11), 0px 32px 32px 0px rgba(0, 0, 0, 0.11);
+}
+
+.line {
+    width: 25.5% !important;
+    height: 1px;
+    margin: 0 auto;
+    background-color: rgb(175, 180, 192);
+    display: block;
+    transform: translateY(1.4rem);
+}
+
+.text {
+    font-size: 2rem !important;
+    width: fit-content;
+    font-weight: 900;
+}
+
+.why-section .row>.col {
+    display: flex;
+    justify-content: center;
+}
+
+.why-section i {
+    font-size: 60px;
+    color: rgb(37, 111, 239);
+}
+
+.success-stories {
+    background: rgb(237, 244, 255);
+    margin: 5rem 0;
+}
+
+.success-stories h4 {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    color: rgb(28, 28, 28);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.card {
+    border-radius: 20px;
+    /* width: 30%; */
+}
+
+.card-text {
+    color: rgb(89, 103, 56);
+}
+
+.line2 {
+    background: rgb(242, 244, 247);
+    width: 100%;
+    height: 1px;
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(41, 49, 66);
+}
+
+.about {
+    color: rgb(145, 151, 166);
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .carousel-item {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card {
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    .carousel-inner {
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: repeat(3, 30%);
+        grid-column-gap: 10px;
+    }
+}
+
+.faq {
+    padding: 2rem 1rem 3rem;
+    width: 67%;
+    margin: 0 auto;
+}
+
+.faq .faq-title {
+    display: flex;
+    justify-content: center;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    color: rgb(28, 28, 28);
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.faq .accordion-item {
+    border: 1px solid rgb(199, 213, 234);
+    margin-bottom: 2rem;
+}
+
+.faq .accordion-item .accordion-body {
+    color: gray;
+}
+
+.faq .accordion-item .accordion-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.faq .accordion-item .accordion-body ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq .accordion-item .accordion-body ul li>a {
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1.5px solid rgb(28, 28, 28);
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgb(28, 28, 28);
+}

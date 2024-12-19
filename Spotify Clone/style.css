@@ -1,0 +1,112 @@
+body {
+    background: linear-gradient(rgba(76, 76, 76, 1) 0%, rgba(17, 17, 17, 1) 100%);
+    min-height: 100vh;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    background: linear-gradient(rgba(76, 76, 76, 1) 0%, rgba(17, 17, 17, 1) 100%);
+    transition: transform .2s;
+}
+
+.cards {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-button {
+    color: #3be377;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(50%);
+    border: none;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.cards:hover .hover-button {
+    transition: transform 0.5s;
+    display: block;
+}
+
+#right {
+    position: relative;
+    left: 1%;
+    padding-top: 7%;
+}
+
+.navbar .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar .row>.col {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1250px) {
+    #left {
+        display: none;
+    }
+
+    #right {
+        position: relative;
+        left: 17%;
+        padding-top: 5%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .toggle {
+        display: none;
+    }
+
+    #right {
+        margin-left: -10%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    #right {
+        position: relative;
+        left: 17%;
+        padding-top: 5%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #right {
+        position: relative;
+        left: 1%;
+        padding-top: 7%;
+    }
+
+    .set {
+        max-width: fit-content;
+        margin-left: 0 !important;
+        max-width: fit-content;
+    }
+
+    .bts {
+        max-width: fit-content;
+        margin-left: 25% !important;
+    }
+
+    .c-x {
+        display: flex;
+        justify-content: space-around !important;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .bts {
+        max-width: fit-content;
+        margin-left: 25% !important;
+        margin-top: 15px;
+    }
+}

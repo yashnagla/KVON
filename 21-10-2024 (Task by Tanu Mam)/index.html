@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        #nav {
+            background-color: #FE5005;
+            height: 104px;
+        }
+
+        #nav button {
+            background-color: transparent;
+            border: 0px;
+        }
+
+        .nav>li {
+            margin: 10px;
+        }
+
+        .nav-item>a {
+            padding: 10px 30px;
+            background: linear-gradient(to right, #ff4837, #ff7720);
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* .nav-item a > p{
+            color: #000 !important;
+        } */
+
+        .nav-item {
+            border: 1px solid rgb(254, 254, 254);
+            border-radius: 10px;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link,
+        .nav-link {
+            background: linear-gradient(to right, #ff4837, #ff7720);
+            color: white;
+        }
+
+        .container {
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .nav-pills .nav-list .nav-link a i {
+            font-size: 100px;
+        }
+
+        .card {
+            margin: 10% auto;
+            width: 70%;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .card .img-fluid {
+            width: 40% !important;
+            margin-top: 10%;
+        }
+
+        #pills-tabs {
+            justify-content: center;
+        }
+
+        h1 {
+            background: linear-gradient(to right, #ff4837, #ff7720);
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Tabs -->
+
+    <div class="container-fluid">
+
+        <ul class="nav nav-pills mb-5 d-flex" id="pills-tabs" role="tablist">
+            <li class="cards nav-item border d-flex text-center" role="presentation">
+                <a class="nav-link active" data-bs-toggle="pill" aria-current="page"
+                    href="#mobile_application_development" role="tab"><i class="fs-1 bi bi-phone"></i>
+                    <p>Mobile Application <br>Development</p>
+                </a>
+            </li>
+            <li class="cards nav-item border d-flex text-center" role="presentation">
+                <a class="nav-link" data-bs-toggle="pill" href="#web-development" role="tab"><i
+                        class="fs-1 bi bi-person-circle"></i>
+                    <p>Web <br>Development</p>
+                </a>
+            </li>
+            <li class="cards nav-item border d-flex text-center" role="presentation">
+                <a class="nav-link" data-bs-toggle="pill" href="#hire_dedicatied_resources" role="tab"><i
+                        class="fs-1 bi bi-briefcase-fill"></i>
+                    <p>Hire Dedicatied <br>Resources</p>
+                </a>
+            </li>
+            <li class="cards nav-item border d-flex text-center" role="presentation">
+                <a class="nav-link" data-bs-toggle="pill" href="#game_development" role="tab"><i
+                        class="fs-1 bi bi-controller"></i>
+                    <p>Game Development <br>Services</p>
+                </a>
+            </li>
+            <li class="cards nav-item border d-flex text-center" role="presentation">
+                <a class="nav-link" data-bs-toggle="pill" href="#on_demand_solution" role="tab"><i
+                        class="fs-1 bi bi-badge-4k"></i>
+                    <p>On-Demand <br>Solution</p>
+                </a>
+            </li>
+            <li class="cards nav-item border d-flex text-center" role="presentation">
+                <a class="nav-link" data-bs-toggle="pill" href="#on_demand_solution" role="tab"><i
+                        class="fs-1 bi bi-badge-4k"></i>
+                    <p>On-Demand <br>Solution</p>
+                </a>
+            </li>
+            <li class="cards nav-item border d-flex text-center" role="presentation">
+                <a class="nav-link" data-bs-toggle="pill" href="#on_demand_solution" role="tab"><i
+                        class="fs-1 bi bi-badge-4k"></i>
+                    <p>On-Demand <br>Solution</p>
+                </a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="pill-tabContent">
+            <div class="container border border-2 tab-pane fade show active" id="mobile_application_development"
+                role="tabpanel">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="/img/gift.png" class="img-fluid">
+                    </div>
+                    <div style="margin-top: 200px;" class="col-6">
+                        <h2>Mission</h2>
+                        <p class="hp">Our mission is to elevate the quality of life of the urban consumer by offering
+                            unparalleled convenience. Convenience is what makes us tick. It's what makes us get out of
+                            bed and say, “Let's do this.”</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container border border-2 tab-pane fade" id="web-development" role="tabpanel">
+                <div class="row">
+                    <div class="col-9 p-3">
+                        <h1>Web Development</h1>
+                        <p>To deliver the websites on the fastest mode, we utilise the latest modern technology
+                            frameworks launched by the industry experts. Our web developers are well versed to develop
+                            robust and flexible websites with these next generation technologies.</p>
+                        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
+                            <div class="col content">
+                                <div class="card">
+                                    <img class="img-fluid" src="./laravel.png" alt="">
+                                    <h5 class="card-title">Laravel</h5>
+                                </div>
+                            </div>
+                            <div class="col content">
+                                <div class="card">
+                                    <img class="img-fluid" src="./laravel.png" alt="">
+                                    <h5 class="card-title">Laravel</h5>
+                                </div>
+                            </div>
+                            <div class="col content">
+                                <div class="card">
+                                    <img class="img-fluid" src="./laravel.png" alt="">
+                                    <h5 class="card-title">Laravel</h5>
+                                </div>
+                            </div>
+                            <div class="col content">
+                                <div class="card">
+                                    <img class="img-fluid" src="./laravel.png" alt="">
+                                    <h5 class="card-title">Laravel</h5>
+                                </div>
+                            </div>
+                            <div class="col content">
+                                <div class="card">
+                                    <img class="img-fluid" src="./laravel.png" alt="">
+                                    <h5 class="card-title">Laravel</h5>
+                                </div>
+                            </div>
+                            <div class="col content">
+                                <div class="card">
+                                    <img class="img-fluid" src="./laravel.png" alt="">
+                                    <h5 class="card-title">Laravel</h5>
+                                </div>
+                            </div>
+                            <div class="col content">
+                                <div class="card">
+                                    <img class="img-fluid" src="./laravel.png" alt="">
+                                    <h5 class="card-title">Laravel</h5>
+                                </div>
+                            </div>
+                            <div class="col content">
+                                <div class="card">
+                                    <img class="img-fluid" src="./laravel.png" alt="">
+                                    <h5 class="card-title">Laravel</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="./computer.png" class="img-fluid p-3" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container border border-2 tab-pane fade" id="hire_dedicatied_resources" role="tabpanel">
+                <div class="row">
+                    <div class="col-6">
+                        <h1>Values</h1>
+                        <p class="hp">Our actions are strongly defined by the Swiggy values. Through ups, downs, and
+                            everything in between; Swiggsters put these values into practice in their everyday ways of
+                            working. Read on to get a taste of how Swiggsters live and breathe these values and how it
+                            forms the backbone of our culture.</p>
+                    </div>
+                    <div class="col-6">
+
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/TjEK0MbJUz4?si=M3R3jChgurtJb9Rj"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container border border-2 tab-pane fade" id="game_development" role="tabpanel">
+                <div class="row">
+                    <div class="col-6">
+                        <h1>Walkthrough</h1>
+                        <p class="hp">Old love with young love feels. Watch the story of two empty nesters, Shailja and
+                            Pradeep, as they navigate through love, life, food, and a badminton court</p>
+                    </div>
+                    <div class="col-6">
+
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/aTikx7ivKmg?si=KsLmnOz9VciueEQn"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container border border-2 tab-pane fade" id="on_demand_solution" role="tabpanel">
+                <div class="row">
+                    <div class="col-6">
+                        <h1>Walkthrough</h1>
+                        <p class="hp">Old love with young love feels. Watch the story of two empty nesters, Shailja and
+                            Pradeep, as they navigate through love, life, food, and a badminton court</p>
+                    </div>
+                    <div class="col-6">
+
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/aTikx7ivKmg?si=KsLmnOz9VciueEQn"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./cards.js"></script>
+</body>
+
+</html>

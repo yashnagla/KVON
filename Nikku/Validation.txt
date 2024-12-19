@@ -1,0 +1,29 @@
+User Dashboard Page:-
+1. Footer Section :- Active class is not working
+
+Sign In Page :-
+Phone Number and Pin sections are recieving alphabets and min & max length is not set
+
+Withdraw Page:-
+Amount Section : in input tag change type to number and add max & min legth attributes (set the min amount and max limit for transaction).
+
+Deposit/Add Page :- 
+Amount Section do not have min & max length
+
+Items/Details/12345 Page :-
+1. Modal Section is not opening according to the option given\
+2. quantity is starting with 0 (should not be starting with 0) and set limit
+3. You Get Section is not geting back to zero from 21 digits
+4. Quantity and You Get section are overlaping after 14 digits
+
+Notification Page :- 
+1. NavBar
+2. New Category section not opening
+3. Hello System section not opening
+
+Bank details page :-
+1. Add a "+" icon for better understanding to where to click
+2. Complete div of current icon is opening the bank details model rather only the icon should only redirect to next level
+3. In the select bank section the list should be alphabetically for user's ease
+4. 
+

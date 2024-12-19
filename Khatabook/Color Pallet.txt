@@ -1,0 +1,17 @@
+Creating a color palette for your Khatabook clone is a great way to add your own twist to the design.
+Here’s a suggested palette that maintains a clean, professional feel while being user-friendly and approachable:
+
+    1.Primary Color - Deep Blue (#0A47A4): This cool, stable color can be used as the primary button color
+    and for headers, providing a sense of trust and clarity.
+    2.Accent Color - Bright Red (#E63946): Adding a pop of red for action buttons or highlights will give
+    the design energy and draw attention to key areas.
+    3.Secondary Color - Soft Gray (#F3F4F6): Use this as a background color to keep screens uncluttered and
+    make other elements stand out.
+    4.Complementary Highlight - Teal Green (#3A7D76): This can add a fresh look to notifications, icons, or
+    small buttons, giving contrast while maintaining a cohesive feel.
+    5.Text Color - Charcoal (#2A2A2A): A dark gray works well for readability on screens, providing contrast
+    against the lighter backgrounds without being as harsh as black.
+
+This combination of colors will help you retain a professional look while adding some visual interest with
+contrasting accent tones. This palette can also adapt well across light and dark modes if you want to add
+that functionality to your project. Let me know if you need more ideas on implementing this design!

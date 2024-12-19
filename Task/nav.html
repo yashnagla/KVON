@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar with Search Bar</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .navbar .form-inline {
+            flex-grow: 1;
+            justify-content: center;
+        }
+        @media screen and (max-width: 500px){
+            img{
+                height: 30px !important;
+            }
+            .bts{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://lokohub.com/front_end_new/images/logo.svg" style="height: 40px;" class="w-40 header-logo" alt="Lokohub">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="form-inline">
+                    <li class="text-dark dropdown my-2 my-lg-0 d-none d-sm-block border">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Location
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                    <!-- <form class="my-2 my-lg-0 d-none d-sm-block" role="search">
+                        <i class="bi bi-geo-alt"></i>
+                        <input class="form-control me-2" type="search" placeholder="Jaipur" aria-label="Search">
+                    </form> -->
+                    <form class="my-2 my-lg-0 d-flex bts justify-content-center" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <i class="bi bi-mic-fill p-2"></i>
+                        <button class="btn" type="submit" id="searchbtn" style="background-color: #fe610c;">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <ul class="row d-flex justify-content-center bts p-0" style="list-style: none;">
+                    <li class="col nav-item pt-1 ps-1 row" style="padding-left: 5%;">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle text-dark" style="display: flex;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-translate"></i><span class="d-none d-sm-block" style="padding-left: 5px;"> EN</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-decoration-none" href="#">ही - Hindi</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="col nav-item pt-1">
+                        <a class="nav-link text-decoration-none text-dark" style="display: flex;" aria-current="page" href="#"><i class="bi bi-megaphone"></i><span class="d-none d-sm-block" style="padding-left: 5px;"> Advertise</span></a>
+                    </li>
+                    <li class="col nav-item pt-1">
+                        <a class="nav-link text-decoration-none text-dark" style="display: flex;" href="#"><i class="bi bi-graph-up-arrow"></i><span class="d-none d-sm-block" style="padding-left: 5px;"> Free Listings</span></a>
+                    </li>
+                    <li class="col nav-item pt-1">
+                        <a class="nav-link text-decoration-none text-dark" style="display: flex;" href="#"><i class="bi bi-bell"></i></a>
+                    </li>
+                </ul>
+                <div class="container-button d-flex justify-content-center">
+                    <a class="nav-link link-dark" href="#"><button class="btn btn-primary button">Login / Signup</button> </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

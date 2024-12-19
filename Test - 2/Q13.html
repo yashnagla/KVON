@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Form</title>
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <style>
+        .main-body{
+            height: 100dvh;
+            width: 100dvw;
+        }
+        #contactForm{
+            width: 45% !important;
+            height: fit-content !important;
+        }
+        @media screen and (max-width:768px) {
+            #contactForm{
+                width: 80% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-body container-fluid d-flex align-items-center justify-content-center">
+        <form id="contactForm" class="border border-grey p-5 rounded-4">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name">
+                <div id="nameError" class="text-danger"></div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1">
+                <div id="emailError" class="text-danger"></div>
+            </div>
+            <div class="mb-3">
+                <label for="textarea" class="form-label">Message</label>
+                <textarea class="form-control" id="textarea"></textarea>
+                <div id="messageError" class="text-danger"></div>
+            </div>
+            <button type="submit" class="btn text-bg-primary">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            // Error Messages
+            document.getElementById('nameError').textContent = '';
+            document.getElementById('emailError').textContent = '';
+            document.getElementById('messageError').textContent = '';
+    
+            // Input Values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('exampleInputEmail1').value;
+            const message = document.getElementById('textarea').value;
+    
+            let valid = true;
+    
+            // Validate Name
+            const nameCheck = /[A-Za-z]/
+            if (!nameCheck || name.length < 2 || name.length > 50) {
+                document.getElementById('nameError').textContent = 'Name must be between 2 and 50 characters.';
+                valid = false;
+            }
+    
+            // Validate Email
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById('emailError').textContent = 'Please enter a valid email address.';
+                valid = false;
+            }
+    
+            // Validate Message
+            if (message.length < 10 || message.length > 500) {
+                document.getElementById('messageError').textContent = 'Message must be between 10 and 500 characters.';
+                valid = false;
+            }
+    
+            if (valid) {
+                alert('Form submitted successfully!');
+            }
+        });
+    </script>
+
+    <script src="./bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

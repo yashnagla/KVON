@@ -1,0 +1,15 @@
+@import url('./index.css');
+
+@import url('./add-restaurant.css');
+
+@import url('./investor.css');
+
+/* Universal CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.text-success {
+    color: rgb(58, 183, 87) !important;
+}

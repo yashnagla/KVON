@@ -1,0 +1,566 @@
+<style>
+    /* Academic Section */
+
+    .academic-section {
+        font-family: Lato, sans-serif;
+        display: flex;
+        flex-direction: column;
+        padding: 2% 0;
+    }
+
+    .section-title {
+        color: #002D5B;
+        font-size: 52px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .section-subtitle {
+        color: #666;
+        font-size: 26px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 22px;
+    }
+
+    .education-timeline {
+        margin-top: 3%;
+    }
+
+    .timeline-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .timeline-content-left-1 {
+        position: relative;
+        right: 14%;
+        border-radius: 12px;
+        padding: 15px 20px;
+        border: 1px solid #D2D2D2;
+    }
+
+    .timeline-content-left-2 {
+        position: relative;
+        right: 14%;
+        border-radius: 12px;
+        padding: 15px 20px;
+        border: 1px solid #D2D2D2;
+    }
+
+    .timeline-content-right-1 {
+        position: relative;
+        left: 14%;
+        border-radius: 12px;
+        padding: 20px 30px;
+        border: 1px solid #D2D2D2;
+    }
+
+    .timeline-content-right-2 {
+        position: relative;
+        left: 14%;
+        border-radius: 12px;
+        padding: 20px 30px;
+        border: 1px solid #D2D2D2;
+    }
+
+    .timeline-date-left-1 {
+        position: absolute;
+        right: 55%;
+        color: #000;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .timeline-date-left-2 {
+        position: absolute;
+        right: 55%;
+        color: #000;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .timeline-date-right-1 {
+        position: absolute;
+        left: 55%;
+        color: #000;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .timeline-date-right-2 {
+        position: absolute;
+        left: 55%;
+        color: #000;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .timeline-marker {
+        position: absolute;
+        right: 48%;
+        background-color: #FFA29D;
+        border-radius: 50%;
+        width: 4.2rem;
+        height: 4.2rem;
+        border: 1px solid #fff;
+    }
+
+    .timeline::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 10px;
+        height: 70%;
+        border-radius: 10px;
+        background-color: rgb(255, 162, 157);
+    }
+
+    .timeline-dot {
+        position: relative;
+        left: 80%;
+        transform: translateX(-50%);
+        width: 7%;
+        height: 40%;
+        background-color: rgb(255, 162, 157);
+        border-radius: 50%;
+        top: 0;
+    }
+
+    .timeline-content {
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 2200px) {
+        .timeline-marker {
+            right: 48.3%;
+        }
+    }
+
+    @media screen and (min-width: 2200px) {
+        .timeline-content-left-1 {
+            right: 16%;
+        }
+
+        .timeline-content-left-2 {
+            right: 16%;
+        }
+
+        .timeline-content-right-1 {
+            left: 16%;
+        }
+
+        .timeline-content-right-2 {
+            left: 16%;
+        }
+
+        .timeline-marker {
+            right: 48.5%;
+        }
+    }
+
+    @media screen and (max-width: 1800px) {
+        .timeline-content-left-1 {
+            right: 16%;
+        }
+
+        .timeline-content-left-2 {
+            right: 16%;
+        }
+
+        .timeline-content-right-1 {
+            left: 16%;
+        }
+
+        .timeline-content-right-2 {
+            left: 16%;
+        }
+
+        .timeline-marker {
+            right: 48%;
+        }
+    }
+
+    @media screen and (max-width: 1600px) {
+        .timeline-content-left-1 {
+            right: 18%;
+        }
+
+        .timeline-content-left-2 {
+            right: 18%;
+        }
+
+        .timeline-content-right-1 {
+            left: 18%;
+        }
+
+        .timeline-content-right-2 {
+            left: 18%;
+        }
+
+        .timeline-marker {
+            right: 47.49%;
+        }
+    }
+
+    @media screen and (max-width: 1400px) {
+        .timeline-content-left-1 {
+            right: 22%;
+        }
+
+        .timeline-content-left-2 {
+            right: 22%;
+        }
+
+        .timeline-content-right-1 {
+            left: 22%;
+        }
+
+        .timeline-content-right-2 {
+            left: 22%;
+        }
+
+        .timeline-marker {
+            right: 47.5%;
+        }
+    }
+
+    @media screen and (max-width: 1199px) {
+        .timeline-content-left-1 {
+            right: 26%;
+        }
+
+        .timeline-content-left-2 {
+            right: 26%;
+        }
+
+        .timeline-content-right-1 {
+            left: 26%;
+        }
+
+        .timeline-content-right-2 {
+            left: 26%;
+        }
+
+        .timeline-marker {
+            right: 46.5%;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .academic-section .timeline::before {
+            left: 2.6%;
+            height: 84%;
+        }
+
+        .timeline-content-left-1 {
+            right: 26%;
+        }
+
+        .timeline-content-left-2 {
+            right: 26%;
+        }
+
+        .timeline-content-right-1 {
+            left: 26%;
+        }
+
+        .timeline-content-right-2 {
+            left: 26%;
+        }
+
+        .timeline-marker {
+            left: 0%;
+        }
+    }
+
+    .education-title {
+        color: #000;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .education-institution {
+        color: #999;
+        font-size: 20px;
+        margin-top: 18px;
+    }
+
+    .education-score {
+        color: #00B01C;
+        font-size: 20px;
+        margin-top: 18px;
+    }
+
+    /* Work Experience Section */
+    .work-experience {
+        font-family: Lato, sans-serif;
+        display: flex;
+        flex-direction: column;
+        padding: 2% 0;
+    }
+
+    .work-experience .section-title {
+        color: #002D5B;
+        font-size: 52px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .work-experience .section-subtitle {
+        color: #666;
+        font-size: 26px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 22px;
+    }
+
+    .work-experience .education-timeline {
+        margin-top: 3%;
+    }
+
+    .work-experience .timeline-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* padding-bottom: 20px;    */
+    }
+
+    .work-experience .timeline-content-left {
+        position: relative;
+        right: 12%;
+        border-radius: 12px;
+        padding: 15px 20px;
+        border: 1px solid #D2D2D2;
+    }
+
+    .work-experience .timeline-content-right {
+        position: relative;
+        left: 15.5%;
+        border-radius: 12px;
+        padding: 20px 30px;
+        border: 1px solid #D2D2D2;
+    }
+
+    .work-experience .timeline-marker {
+        position: absolute;
+        right: 48%;
+        background-color: #FFA29D;
+        border-radius: 50%;
+        width: 4.2rem;
+        height: 4.2rem;
+        border: 1px solid #fff;
+    }
+
+    .work-experience .timeline-date-right {
+        position: absolute;
+        left: 55%;
+        color: #000;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .work-experience .timeline-date-left {
+        position: absolute;
+        right: 55%;
+        color: #000;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .work-experience .education-title {
+        color: #000;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .work-experience .education-institution {
+        color: #999;
+        font-size: 20px;
+        margin-top: 18px;
+    }
+
+    .work-experience .education-score {
+        color: #00B01C;
+        font-size: 20px;
+        margin-top: 18px;
+    }
+
+    .work-experience .timeline::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 10px;
+        height: 73%;
+        border-radius: 10px;
+        background-color: rgb(255, 162, 157);
+    }
+
+    .work-experience .timeline-dot {
+        position: relative;
+        left: 80%;
+        transform: translateX(-50%);
+        width: 7%;
+        height: 40%;
+        background-color: rgb(255, 162, 157);
+        border-radius: 50%;
+        top: 0;
+    }
+
+    .work-experience .timeline-content {
+        justify-content: center;
+    }
+
+    @media (max-width: 991px) {
+        .work-experience .timeline::before {
+            left: 2.6%;
+        }
+
+        .work-experience .timeline-marker {
+            left: 0;
+        }
+
+        .work-experience .timeline-date-left,
+        .timeline-date-right {
+            left: 15% !important;
+        }
+
+        .work-experience .timeline-content-left {
+            left: 20% !important;
+        }
+
+        .work-experience .timeline-content-right {
+            left: 32% !important;
+        }
+
+        .work-experience .timeline-content-left-esp {
+            left: 30% !important;
+        }
+
+        .work-experience .timeline-content-right-esp {
+            left: 42% !important;
+        }
+    }
+</style>
+
+<!-- Academic Section -->
+<div class="academic-section">
+    <div class="container">
+        <h1 class="section-title">Academic</h1>
+        <p class="section-subtitle">My educational background</p>
+
+        <div class="education-timeline">
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-content-left-1">
+                        <h2 class="education-title">Master of Computer Application</h2>
+                        <p class="education-institution">University of Rajasthan, Jaipur</p>
+                        <p class="education-score">Scored 83.25%</p>
+                    </div>
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <time class="timeline-date-right-1">December, 2006</time>
+                </article>
+
+                <article class="timeline-item">
+                    <time class="timeline-date-left-1">June, 2003</time>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content-right-1">
+                        <h2 class="education-title">B.Sc. (Mathematics)</h2>
+                        <p class="education-institution">University of Rajasthan, Jaipur</p>
+                        <p class="education-score">Scored 65.25%</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-content-left-2">
+                        <h2 class="education-title">Higher Secondary Education</h2>
+                        <p class="education-institution">Board of Secondary Education, <br> Rajasthan,
+                            Ajmer</p>
+                        <p class="education-score">Scored 59.45%</p>
+                    </div>
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <time class="timeline-date-right-2">June, 2000</time>
+                </article>
+
+                <article class="timeline-item">
+                    <time class="timeline-date-left-2">April, 1998</time>
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-content-right-2">
+                        <h2 class="education-title">Senior Secondary Education</h2>
+                        <p class="education-institution">Board of Secondary Education, <br> Rajasthan, Ajmer</p>
+                        <p class="education-score">Scored 74.25%</p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Work Experience Section -->
+<div class="work-experience">
+    <div class="container">
+        <h1 class="section-title">Work Experience</h1>
+        <p class="section-subtitle">My technical & miscellaneous skills</p>
+
+        <div class="education-timeline">
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-content-left">
+                        <h2 class="education-title">WNS Technologies</h2>
+                        <p class="education-institution">Assistant Vice President</p>
+                    </div>
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <time class="timeline-date-right">2 Year 3 Months</time>
+                </article>
+
+                <article class="timeline-item">
+                    <time class="timeline-date-left">3 Year 5 Months</time>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content-right">
+                        <h2 class="education-title">HCL Technologies</h2>
+                        <p class="education-institution">Technical Manager / Senior Technical <br> Manager</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-content-left">
+                        <h2 class="education-title">Sapient Corporation</h2>
+                        <p class="education-institution">Technology Specialist</p>
+                    </div>
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <time class="timeline-date-right">1 Year 7 Months</time>
+                </article>
+
+                <article class="timeline-item">
+                    <time class="timeline-date-left">3 Year 9 Months</time>
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-content-right-esp" style="left: 18%">
+                        <h2 class="education-title">Smart Sign Design India Private Limited</h2>
+                        <p class="education-institution">Project Lead / Technical Lead</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <div class="timeline-content-left-esp" style="right: 15%">
+                        <h2 class="education-title">Decurtis Corporation Pvt. Ltd,</h2>
+                        <p class="education-institution">Technical Lead</p>
+                    </div>
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <time class="timeline-date-right">2 Year</time>
+                </article>
+
+                <article class="timeline-item">
+                    <time class="timeline-date-left">1 Year 9 Months</time>
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-content-right">
+                        <h2 class="education-title">Ideal System Private Limited</h2>
+                        <p class="education-institution">Software Engineer</p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</div>

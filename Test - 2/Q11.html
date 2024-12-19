@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q11</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+        .main-body {
+            height: 100dvh;
+            width: 100dvw;
+        }
+
+        .card {
+            width: 300px;
+            height: 200px;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            backface-visibility: hidden;
+        }
+        .card-back {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>    
+<body>
+    <div class="container main-body d-flex justify-content-center align-items-center">
+        <div class="card position-relative">
+            <div class="card-face fs-2 h-100 w-100 position-absolute bg-light d-flex align-items-center justify-content-center border border-grey">
+                Front Side
+            </div>
+            <div class="card-face card-back fs-2 h-100 w-100 bg-primary text-light d-flex align-items-center justify-content-center">
+                Back Side
+            </div>
+        </div>
+    </div>
+    <script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>

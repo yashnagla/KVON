@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+    <title>Justdial</title>
+
+    <style>
+        table {
+            border-collapse: separate;
+            border: 1px solid #d4d1d1;
+        }
+
+        th,
+        td {
+            border: 1px solid #d4d1d1;
+        }
+
+        i {
+            padding: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <!-- <img src="./Logo.png" style="width: 90px;" alt=""> -->
+                    <img src="https://lokohub.com/front_end_new/images/logo.svg" style="height: 20px;" class="w-40 header-logo" alt="Lokohub">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <form class="d-flex d-none d-sm-block" role="search">
+                        <i class="bi bi-geo-alt"></i>
+                        <input class="form-control me-2" type="search" placeholder="Jaipur" aria-label="Search">
+                    </form>
+                    <form class="d-flex justify-content-center" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <i class="bi bi-mic-fill"></i>
+                        <button class="btn" type="submit" id="searchbtn" style="background-color: #fe610c;">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                    <div class="container-list d-flex justify-content-center">
+                        <ul class="d-flex" style="list-style: none;">
+                            <li class="nav-item pt-3">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle text-primary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-translate"></i><span class="d-none d-sm-block"> EN</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item text-decoration-none link-dark" href="#">ही - Hindi</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item pt-3">
+                                <a class="nav-link text-decoration-none link-dark" aria-current="page" href="#"><i class="bi bi-megaphone"></i><span class="d-none d-sm-block"> Advertise</span></a>
+                            </li>
+                            <li class="nav-item pt-3">
+                                <a class="nav-link text-decoration-none link-dark" href="#"><i class="bi bi-graph-up-arrow"></i><span class="d-none d-sm-block"> Free Listings</span></a>
+                            </li>
+                            <li class="nav-item pt-3">
+                                <a class="nav-link text-decoration-none link-dark" href="#"><i class="bi bi-bell"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="container-button col d-flex justify-content-center">
+                        <a class="nav-link link-dark" href="#"><button class="btn btn-primary button">Login / Signup</button> </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Ad -->
+        <div class="container-fluid">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./image1.png" class="img-fluid d-block w-100" style="height: 110px;" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image2.png" class="img-fluid d-block w-100" style="height: 110px;" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image3.png" class="img-fluid d-block w-100" style="height: 110px;" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image4.png" class="img-fluid d-block w-100" style="height: 110px;" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Breadcrumb -->
+        <div class="container-fluid d-flex fs-1">
+            <nav class="text-dark text-decoration-none" style="--bs-breadcrumb-divider: '>'; font-size: 12px;"
+                aria-label="breadcrumb">
+                <ol class="breadcrumb fs-5 px-2">
+                    <li class="breadcrumb-item"><a href="#"
+                            class="text-decoration-none link-dark link-primary-hover">Jaipur</a>
+                    </li>
+                    <li class="breadcrumb-item active"><a href="#" class="text-decoration-none link-dark">Hotels in
+                            Jaipur</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">6265+ Listings</li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- Heading -->
+        <div class="container-fluid pb-3">
+            <div class="row">
+                <div class="col-11">
+                    <h3>Best Deals - Top Hotels in Jaipur</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="pt-3 position-sticky bg-body-tertiary rounded" style="top:20px; z-index: 10;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <input type="date" value="2024-10-01">
+                    </div>
+                    <div class="col">
+                        <input type="date" value="2024-10-01">
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn text-dark dropdown-toggle" style="background-color: #f1f1f1;"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sort by
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Relevance</a></li>
+                                <li><a class="dropdown-item" href="#">Rating</a></li>
+                                <li><a class="dropdown-item" href="#">Popular</a></li>
+                                <li><a class="dropdown-item" href="#">Distance</a></li>
+                                <li><a class="dropdown-item" href="#">Highest Price</a></li>
+                                <li><a class="dropdown-item" href="#">Lowest Price</a></li>
+                                <li><a class="dropdown-item" href="#"><button type="button"
+                                            class="btn btn-outline-primary">close</button></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn text-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="background-color: #f1f1f1;">
+                                Star Rating
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">5 Star</a></li>
+                                <li><a class="dropdown-item" href="#">4 Star</a></li>
+                                <li><a class="dropdown-item" href="#">3 Star</a></li>
+                                <li><a class="dropdown-item" href="#">2 Star</a></li>
+                                <li><a class="dropdown-item" href="#">1 Star</a></li>
+                                <li><a class="dropdown-item" href="#"><button type="button"
+                                            class="btn btn-outline-primary">close</button></a></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn text-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="background-color: #eeeeee;">
+                                Budget
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Rs 501 to Rs 1000</a></li>
+                                <li><a class="dropdown-item" href="#">Rs 1001 to Rs 2000</a></li>
+                                <li><a class="dropdown-item" href="#">Rs 2001 to Rs 3000</a></li>
+                                <li><a class="dropdown-item" href="#">Rs 3001 to Rs 4000</a></li>
+                                <li><a class="dropdown-item" href="#">Rs 4001 to Rs 5000</a></li>
+                                <li><a class="dropdown-item" href="#">Rs 5001 to Rs 6000</a></li>
+                                <li><a class="dropdown-item" href="#">Rs 6001 to Rs 7000</a></li>
+                                <li><a class="dropdown-item" href="#">Rs 7001 to Rs 8000</a></li>
+                                <li><a class="dropdown-item" href="#"><button type="button" class="btn btn-secondary"
+                                            disabled>Apply</button> <button type="button"
+                                            class="btn btn-outline-primary">close</button></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn text-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="background-color: #f1f1f1;">
+                                Hotel View
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Mountain View</a></li>
+                                <li><a class="dropdown-item" href="#">Lakeside View</a></li>
+                                <li><a class="dropdown-item" href="#">Quite Street View</a></li>
+                                <li><a class="dropdown-item" href="#">City View</a></li>
+                                <li><a class="dropdown-item" href="#">Beach Access</a></li>
+                                <li><a class="dropdown-item" href="#"><button type="button"
+                                            class="btn btn-outline-primary">close</button></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn text-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="background-color: #f1f1f1;">
+                                Pets Essential
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Pets Allowed</a></li>
+                                <li><a class="dropdown-item" href="#">Pets Not Allowed</a></li>
+                                <li><a class="dropdown-item" href="#"><button type="button"
+                                            class="btn btn-outline-primary">close</button></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn text-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="background-color: #f1f1f1;">
+                                User Rating
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">5 Star</a></li>
+                                <li><a class="dropdown-item" href="#">4 Star +</a></li>
+                                <li><a class="dropdown-item" href="#">3 Star +</a></li>
+                                <li><a class="dropdown-item" href="#"><button type="button"
+                                            class="btn btn-outline-primary">close</button></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown">
+                            <button class="btn text-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="background-color: #f1f1f1;">
+                                Amenities
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Spa & Sauna</a></li>
+                                <li><a class="dropdown-item" href="#">Fitness Center</a></li>
+                                <li><a class="dropdown-item" href="#">Swimming Pool</a></li>
+                                <li><a class="dropdown-item" href="#">Parking Availability</a></li>
+                                <li><a class="dropdown-item" href="#">Babysitting Services</a></li>
+                                <li><a class="dropdown-item" href="#">Bar</a></li>
+                                <li><a class="dropdown-item" href="#">Children's Play Area</a></li>
+                                <li><a class="dropdown-item" href="#">Express Check-in/Check-out</a></li>
+                                <li><a class="dropdown-item" href="#"><button type="button" class="btn btn-secondary"
+                                            disabled>Apply</button> <button type="button"
+                                            class="btn btn-outline-primary">close</button></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">All Filters</button>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header border-bottom">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">MORE FILTERS
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="offcanvas-body ">
+                                <h6 class="pb-3">Check-in</h6>
+                                <div class="row">
+                                    <div class="col">
+                                        <input class="rounded" type="date">
+                                    </div>
+                                    <div class="col">
+                                        <input class="rounded" type="date">
+                                    </div>
+                                    <h6 class="py-4">Quick Filters</h6>
+                                    <div class="row">
+                                        <div class="col">
+                                            <button type="button" class="btn btn-outline-dark btn-light"><i
+                                                    class="bi bi-fire"></i> Trending</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-outline-dark btn-light"><i
+                                                    class="bi bi-star-fill"></i> Top Rated</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-outline-dark btn-light"><i
+                                                    class="bi bi-lightning-charge-fill"></i> Quick Response</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-outline-dark btn-light">✔ Jd
+                                                Verified</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-outline-dark btn-light"><i
+                                                    class="bi bi-percent"></i> Deals</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-outline-dark btn-light"><i
+                                                    class="bi bi-align-top"></i> Jd Trust</button>
+                                        </div>
+                                        <h6 class="py-4">Quick Filters</h6>
+                                        <div class="row">
+                                            <div class="col">
+                                                <button type="button"
+                                                    class="btn btn-outline-dark btn-light">Relevance</button>
+                                            </div>
+                                            <div class="col">
+                                                <button type="button"
+                                                    class="btn btn-outline-dark btn-light">Rating</button>
+                                            </div>
+                                            <div class="col">
+                                                <button type="button"
+                                                    class="btn btn-outline-dark btn-light">Popular</button>
+                                            </div>
+                                            <div class="col">
+                                                <button type="button"
+                                                    class="btn btn-outline-dark btn-light">Distance</button>
+                                            </div>
+                                            <div class="col">
+                                                <button type="button" class="btn btn-outline-dark btn-light">Highest
+                                                    Price</button>
+                                            </div>
+                                            <div class="col">
+                                                <button type="button" class="btn btn-outline-dark btn-light">Lowest
+                                                    Price</button>
+                                            </div>
+                                            <h6 class="py-4">Quick Filters</h6>
+                                            <div class="row justify-content-evenly">
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-outline-dark btn-light">5
+                                                        Star</button>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-outline-dark btn-light">4
+                                                        Star</button>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-outline-dark btn-light">3
+                                                        Star</button>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-outline-dark btn-light">2
+                                                        Star</button>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-outline-dark btn-light">1
+                                                        Star</button>
+                                                </div>
+                                                <h6 class="py-4">Budget</h6>
+                                                <ul class="list-unstyled">
+                                                    <li><button type="button" class="btn btn-outline-dark btn-light">Rs
+                                                            501
+                                                            to Rs 1000</button></li>
+                                                    <li><button type="button" class="btn btn-outline-dark btn-light">Rs
+                                                            1001
+                                                            to Rs 2000</button></li>
+                                                    <li><button type="button" class="btn btn-outline-dark btn-light">Rs
+                                                            2001
+                                                            to Rs 3000</button></li>
+                                                    <li><button type="button" class="btn btn-outline-dark btn-light">Rs
+                                                            3001
+                                                            to Rs 4000</button></li>
+                                                    <li><button type="button" class="btn btn-outline-dark btn-light">Rs
+                                                            4001
+                                                            to Rs 5000</button></li>
+                                                    <li><button type="button" class="btn btn-outline-dark btn-light">Rs
+                                                            5001
+                                                            to Rs 6000</button></li>
+                                                    <li><button type="button" class="btn btn-outline-dark btn-light">Rs
+                                                            6001
+                                                            to Rs 7000</button></li>
+                                                    <li><button type="button" class="btn btn-outline-dark btn-light">Rs
+                                                            7001
+                                                            to Rs 8000</button></li>
+                                                    <li><button type="button" class="btn btn-outline-dark btn-light">Rs
+                                                            8001
+                                                            & Above</button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="offcanvas-footer">
+                                <div class="row justify-content-end">
+                                    <div class="col"><button type="button" class="btn btn-secondary">Reset
+                                            Filters</button>
+                                    </div>
+                                    <div class="col"><button type="button" class="btn btn-secondary">Apply
+                                            Filters</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div class="card m-3 border-bedge rounded-3 p-3"
+                    style="max-height: fit-content; max-width: fit-content;">
+                    <div class="row g-0 justify-content-evenly">
+                        <div class="col-3">
+                            <img src="./hotel1.webp" class="card-img img-fluid rounded" alt="Hotel Enternce">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body w-auto">
+                                <h5 class="card-title"> Hotel A R Inn Lodging and Boarding</h5>
+                                <span class="badge bg-success text-light fs-6">4.3 <i
+                                        class="bi bi-star-fill"></i></span>
+                                <span class="badge text-secondary fs-6">284 Rating</span>
+                                <span class="badge text-light bg-warning fs-6">Trust</span>
+                                <span class="badge text-primary fs-6">Verified</span>
+                                <span class="fs-6"><span class="badge fs-6"><i
+                                            class="bi bi-search text-dark"></i></span>Top
+                                    Search</span>
+                                <h6 class="p-2"><i class="bi bi-geo-alt"></i> Bhaynder Road Mira Road East,
+                                    Thane</h6>
+                                <div>
+                                    <span class="badge text-dark fs-6">Pets Allowed</span>
+                                    <span class="badge text-dark fs-6">Swimming Pool</span>
+                                    <span class="badge text-dark fs-6">City View</span>
+                                </div><br>
+                                <button type="button" class="btn btn-success" href="tel:713-992-0916">
+                                    <i class="bi bi-telephone-fill fs-6"></i> 713-992-0916
+                                </button>
+                                <button type="button" class="btn btn-primary">Get Best Deals</button>
+                                <button type="button" class="btn border border-1 fw-bold" href="tel:713-992-0916">
+                                    <i class="bi bi-whatsapp"></i> Whats App
+                                </button><br><br>
+                                <h6>Responds in <span class="text-success">30 Mins</span></h6>
+                                <h6><i class="bi bi-graph-up-arrow"></i> 730 people recently enquired</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-3 border-bedge rounded-3 p-3"
+                    style="max-height: fit-content; max-width: fit-content;">
+                    <div class="row g-0 justify-content-evenly">
+                        <div class="col-3">
+                            <img src="./hotel1.webp" class="card-img img-fluid rounded" alt="Hotel Enternce">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body w-auto">
+                                <h5 class="card-title"> Hotel A R Inn Lodging and Boarding</h5>
+                                <span class="badge bg-success text-light fs-6">4.3 <i
+                                        class="bi bi-star-fill"></i></span>
+                                <span class="badge text-secondary fs-6">284 Rating</span>
+                                <span class="badge text-light bg-warning fs-6">Trust</span>
+                                <span class="badge text-primary fs-6">Verified</span>
+                                <span class="fs-6"><span class="badge fs-6"><i
+                                            class="bi bi-search text-dark"></i></span>Top
+                                    Search</span>
+                                <h6 class="p-2"><i class="bi bi-geo-alt"></i> Bhaynder Road Mira Road East,
+                                    Thane</h6>
+                                <div>
+                                    <span class="badge text-dark fs-6">Pets Allowed</span>
+                                    <span class="badge text-dark fs-6">Swimming Pool</span>
+                                    <span class="badge text-dark fs-6">City View</span>
+                                </div><br>
+                                <button type="button" class="btn btn-success" href="tel:713-992-0916">
+                                    <i class="bi bi-telephone-fill"></i> 713-992-0916
+                                </button>
+                                <button type="button" class="btn btn-primary">Get Best Deals</button>
+                                <button type="button" class="btn border border-1 fw-bold" href="tel:713-992-0916">
+                                    <i class="bi bi-whatsapp"></i> Whats App
+                                </button><br><br>
+                                <h6>Responds in <span class="text-success">30 Mins</span></h6>
+                                <h6><i class="bi bi-graph-up-arrow"></i> 730 people recently enquired</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-3 border-bedge rounded-3 p-3"
+                    style="max-height: fit-content; max-width: fit-content;">
+                    <div class="row g-0 justify-content-evenly">
+                        <div class="col-3">
+                            <img src="./hotel1.webp" class="card-img img-fluid rounded" alt="Hotel Enternce">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body w-auto">
+                                <h5 class="card-title"> Hotel A R Inn Lodging and Boarding</h5>
+                                <span class="badge bg-success text-light fs-6">4.3 <i
+                                        class="bi bi-star-fill"></i></span>
+                                <span class="badge text-secondary fs-6">284 Rating</span>
+                                <span class="badge text-light bg-warning fs-6">Trust</span>
+                                <span class="badge text-primary fs-6">Verified</span>
+                                <span class="fs-6"><span class="badge fs-6"><i
+                                            class="bi bi-search text-dark"></i></span>Top
+                                    Search</span>
+                                <h6 class="p-2"><i class="bi bi-geo-alt"></i> Bhaynder Road Mira Road East,
+                                    Thane</h6>
+                                <div>
+                                    <span class="badge text-dark fs-6">Pets Allowed</span>
+                                    <span class="badge text-dark fs-6">Swimming Pool</span>
+                                    <span class="badge text-dark fs-6">City View</span>
+                                </div><br>
+                                <button type="button" class="btn btn-success" href="tel:713-992-0916">
+                                    <i class="bi bi-telephone-fill"></i> 713-992-0916
+                                </button>
+                                <button type="button" class="btn btn-primary">Get Best Deals</button>
+                                <button type="button" class="btn border border-1 fw-bold" href="tel:713-992-0916">
+                                    <i class="bi bi-whatsapp"></i> Whats App
+                                </button><br><br>
+                                <h6>Responds in <span class="text-success">30 Mins</span></h6>
+                                <h6><i class="bi bi-graph-up-arrow"></i> 730 people recently enquired</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-3 border-bedge rounded-3 p-3"
+                    style="max-height: fit-content; max-width: fit-content;">
+                    <div class="row g-0 justify-content-evenly">
+                        <div class="col-3">
+                            <img src="./hotel1.webp" class="card-img img-fluid rounded" alt="Hotel Enternce">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body w-auto">
+                                <h5 class="card-title"> Hotel A R Inn Lodging and Boarding</h5>
+                                <span class="badge bg-success text-light fs-6">4.3 <i
+                                        class="bi bi-star-fill"></i></span>
+                                <span class="badge text-secondary fs-6">284 Rating</span>
+                                <span class="badge text-light bg-warning fs-6">Trust</span>
+                                <span class="badge text-primary fs-6">Verified</span>
+                                <span class="fs-6"><span class="badge fs-6"><i
+                                            class="bi bi-search text-dark"></i></span>Top
+                                    Search</span>
+                                <h6 class="p-2"><i class="bi bi-geo-alt"></i> Bhaynder Road Mira Road East,
+                                    Thane</h6>
+                                <div>
+                                    <span class="badge text-dark fs-6">Pets Allowed</span>
+                                    <span class="badge text-dark fs-6">Swimming Pool</span>
+                                    <span class="badge text-dark fs-6">City View</span>
+                                </div><br>
+                                <button type="button" class="btn btn-success" href="tel:713-992-0916">
+                                    <i class="bi bi-telephone-fill"></i> 713-992-0916
+                                </button>
+                                <button type="button" class="btn btn-primary">Get Best Deals</button>
+                                <button type="button" class="btn border border-1 fw-bold" href="tel:713-992-0916">
+                                    <i class="bi bi-whatsapp"></i> Whats App
+                                </button><br><br>
+                                <h6>Responds in <span class="text-success">30 Mins</span></h6>
+                                <h6><i class="bi bi-graph-up-arrow"></i> 730 people recently enquired</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-3 border-bedge rounded-3 p-3"
+                    style="max-height: fit-content; max-width: fit-content;">
+                    <div class="row g-0 justify-content-evenly">
+                        <div class="col-3">
+                            <img src="./hotel1.webp" class="card-img img-fluid rounded" alt="Hotel Enternce">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body w-auto">
+                                <h5 class="card-title"> Hotel A R Inn Lodging and Boarding</h5>
+                                <span class="badge bg-success text-light fs-6">4.3 <i
+                                        class="bi bi-star-fill"></i></span>
+                                <span class="badge text-secondary fs-6">284 Rating</span>
+                                <span class="badge text-light bg-warning fs-6">Trust</span>
+                                <span class="badge text-primary fs-6">Verified</span>
+                                <span class="fs-6"><span class="badge fs-6"><i
+                                            class="bi bi-search text-dark"></i></span>Top
+                                    Search</span>
+                                <h6 class="p-2"><i class="bi bi-geo-alt"></i> Bhaynder Road Mira Road East,
+                                    Thane</h6>
+                                <div>
+                                    <span class="badge text-dark fs-6">Pets Allowed</span>
+                                    <span class="badge text-dark fs-6">Swimming Pool</span>
+                                    <span class="badge text-dark fs-6">City View</span>
+                                </div><br>
+                                <button type="button" class="btn btn-success" href="tel:713-992-0916">
+                                    <i class="bi bi-telephone-fill"></i> 713-992-0916
+                                </button>
+                                <button type="button" class="btn btn-primary">Get Best Deals</button>
+                                <button type="button" class="btn border border-1 fw-bold" href="tel:713-992-0916">
+                                    <i class="bi bi-whatsapp"></i> Whats App
+                                </button><br><br>
+                                <h6>Responds in <span class="text-success">30 Mins</span></h6>
+                                <h6><i class="bi bi-graph-up-arrow"></i> 730 people recently enquired</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-3 border-bedge rounded-3 p-3"
+                    style="max-height: fit-content; max-width: fit-content;">
+                    <div class="row g-0 justify-content-evenly">
+                        <div class="col-3">
+                            <img src="./hotel1.webp" class="card-img img-fluid rounded" alt="Hotel Enternce">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body w-auto">
+                                <h5 class="card-title"> Hotel A R Inn Lodging and Boarding</h5>
+                                <span class="badge bg-success text-light fs-6">4.3 <i
+                                        class="bi bi-star-fill"></i></span>
+                                <span class="badge text-secondary fs-6">284 Rating</span>
+                                <span class="badge text-light bg-warning fs-6">Trust</span>
+                                <span class="badge text-primary fs-6">Verified</span>
+                                <span class="fs-6"><span class="badge fs-6"><i
+                                            class="bi bi-search text-dark"></i></span>Top
+                                    Search</span>
+                                <h6 class="p-2"><i class="bi bi-geo-alt"></i> Bhaynder Road Mira Road East,
+                                    Thane</h6>
+                                <div>
+                                    <span class="badge text-dark fs-6">Pets Allowed</span>
+                                    <span class="badge text-dark fs-6">Swimming Pool</span>
+                                    <span class="badge text-dark fs-6">City View</span>
+                                </div><br>
+                                <button type="button" class="btn btn-success" href="tel:713-992-0916">
+                                    <i class="bi bi-telephone-fill"></i> 713-992-0916
+                                </button>
+                                <button type="button" class="btn btn-primary">Get Best Deals</button>
+                                <button type="button" class="btn border border-1 fw-bold" href="tel:713-992-0916">
+                                    <i class="bi bi-whatsapp"></i> Whats App
+                                </button><br><br>
+                                <h6>Responds in <span class="text-success">30 Mins</span></h6>
+                                <h6><i class="bi bi-graph-up-arrow"></i> 730 people recently enquired</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-3 border-bedge rounded-3 p-3"
+                    style="max-height: fit-content; max-width: fit-content;">
+                    <div class="row g-0 justify-content-evenly">
+                        <div class="col-3">
+                            <img src="./hotel1.webp" class="card-img img-fluid rounded" alt="Hotel Enternce">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body w-auto">
+                                <h5 class="card-title"> Hotel A R Inn Lodging and Boarding</h5>
+                                <span class="badge bg-success text-light fs-6">4.3 <i
+                                        class="bi bi-star-fill"></i></span>
+                                <span class="badge text-secondary fs-6">284 Rating</span>
+                                <span class="badge text-light bg-warning fs-6">Trust</span>
+                                <span class="badge text-primary fs-6">Verified</span>
+                                <span class="fs-6"><span class="badge fs-6"><i
+                                            class="bi bi-search text-dark"></i></span>Top
+                                    Search</span>
+                                <h6 class="p-2"><i class="bi bi-geo-alt"></i> Bhaynder Road Mira Road East,
+                                    Thane</h6>
+                                <div>
+                                    <span class="badge text-dark fs-6">Pets Allowed</span>
+                                    <span class="badge text-dark fs-6">Swimming Pool</span>
+                                    <span class="badge text-dark fs-6">City View</span>
+                                </div><br>
+                                <button type="button" class="btn btn-success" href="tel:713-992-0916">
+                                    <i class="bi bi-telephone-fill"></i> 713-992-0916
+                                </button>
+                                <button type="button" class="btn btn-primary">Get Best Deals</button>
+                                <button type="button" class="btn border border-1 fw-bold" href="tel:713-992-0916">
+                                    <i class="bi bi-whatsapp"></i> Whats App
+                                </button><br><br>
+                                <h6>Responds in <span class="text-success">30 Mins</span></h6>
+                                <h6><i class="bi bi-graph-up-arrow"></i> 730 people recently enquired</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-3 border-bedge rounded-3 p-3"
+                    style="max-height: fit-content; max-width: fit-content;">
+                    <div class="row g-0 justify-content-evenly">
+                        <div class="col-3">
+                            <img src="./hotel1.webp" class="card-img img-fluid rounded" alt="Hotel Enternce">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body w-auto">
+                                <h5 class="card-title"> Hotel A R Inn Lodging and Boarding</h5>
+                                <span class="badge bg-success text-light fs-6">4.3 <i
+                                        class="bi bi-star-fill"></i></span>
+                                <span class="badge text-secondary fs-6">284 Rating</span>
+                                <span class="badge text-light bg-warning fs-6">Trust</span>
+                                <span class="badge text-primary fs-6">Verified</span>
+                                <span class="fs-6"><span class="badge fs-6"><i
+                                            class="bi bi-search text-dark"></i></span>Top
+                                    Search</span>
+                                <h6 class="p-2"><i class="bi bi-geo-alt"></i> Bhaynder Road Mira Road East,
+                                    Thane</h6>
+                                <div>
+                                    <span class="badge text-dark fs-6">Pets Allowed</span>
+                                    <span class="badge text-dark fs-6">Swimming Pool</span>
+                                    <span class="badge text-dark fs-6">City View</span>
+                                </div><br>
+                                <button type="button" class="btn btn-success" href="tel:713-992-0916">
+                                    <i class="bi bi-telephone-fill"></i> 713-992-0916
+                                </button>
+                                <button type="button" class="btn btn-primary">Get Best Deals</button>
+                                <button type="button" class="btn border border-1 fw-bold" href="tel:713-992-0916">
+                                    <i class="bi bi-whatsapp"></i> Whats App
+                                </button><br><br>
+                                <h6>Responds in <span class="text-success">30 Mins</span></h6>
+                                <h6><i class="bi bi-graph-up-arrow"></i> 730 people recently enquired</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-3 border-bedge rounded-3 p-3"
+                    style="max-height: fit-content; max-width: fit-content;">
+                    <div class="row g-0 justify-content-evenly">
+                        <div class="col-3">
+                            <img src="./hotel1.webp" class="card-img img-fluid rounded" alt="Hotel Enternce">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body w-auto">
+                                <h5 class="card-title"> Hotel A R Inn Lodging and Boarding</h5>
+                                <span class="badge bg-success text-light fs-6">4.3 <i
+                                        class="bi bi-star-fill"></i></span>
+                                <span class="badge text-secondary fs-6">284 Rating</span>
+                                <span class="badge text-light bg-warning fs-6">Trust</span>
+                                <span class="badge text-primary fs-6">Verified</span>
+                                <span class="fs-6"><span class="badge fs-6"><i
+                                            class="bi bi-search text-dark"></i></span>Top
+                                    Search</span>
+                                <h6 class="p-2"><i class="bi bi-geo-alt"></i> Bhaynder Road Mira Road East,
+                                    Thane</h6>
+                                <div>
+                                    <span class="badge text-dark fs-6">Pets Allowed</span>
+                                    <span class="badge text-dark fs-6">Swimming Pool</span>
+                                    <span class="badge text-dark fs-6">City View</span>
+                                </div><br>
+                                <button type="button" class="btn btn-success" href="tel:713-992-0916">
+                                    <i class="bi bi-telephone-fill"></i> 713-992-0916
+                                </button>
+                                <button type="button" class="btn btn-primary">Get Best Deals</button>
+                                <button type="button" class="btn border border-1 fw-bold" href="tel:713-992-0916">
+                                    <i class="bi bi-whatsapp"></i> Whats App
+                                </button><br><br>
+                                <h6>Responds in <span class="text-success">30 Mins</span></h6>
+                                <h6><i class="bi bi-graph-up-arrow"></i> 730 people recently enquired</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-3 border-bedge rounded-3 p-3"
+                    style="max-height: fit-content; max-width: fit-content;">
+                    <div class="row g-0 justify-content-evenly">
+                        <div class="col-3">
+                            <img src="./hotel1.webp" class="card-img img-fluid rounded" alt="Hotel Enternce">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body w-auto">
+                                <h5 class="card-title"> Hotel A R Inn Lodging and Boarding</h5>
+                                <span class="badge bg-success text-light fs-6">4.3 <i
+                                        class="bi bi-star-fill"></i></span>
+                                <span class="badge text-secondary fs-6">284 Rating</span>
+                                <span class="badge text-light bg-warning fs-6">Trust</span>
+                                <span class="badge text-primary fs-6">Verified</span>
+                                <span class="fs-6"><span class="badge fs-6"><i
+                                            class="bi bi-search text-dark"></i></span>Top
+                                    Search</span>
+                                <h6 class="p-2"><i class="bi bi-geo-alt"></i> Bhaynder Road Mira Road East,
+                                    Thane</h6>
+                                <div>
+                                    <span class="badge text-dark fs-6">Pets Allowed</span>
+                                    <span class="badge text-dark fs-6">Swimming Pool</span>
+                                    <span class="badge text-dark fs-6">City View</span>
+                                </div><br>
+                                <button type="button" class="btn btn-success" href="tel:713-992-0916">
+                                    <i class="bi bi-telephone-fill"></i> 713-992-0916
+                                </button>
+                                <button type="button" class="btn btn-primary">Get Best Deals</button>
+                                <button type="button" class="btn border border-1 fw-bold" href="tel:713-992-0916">
+                                    <i class="bi bi-whatsapp"></i> Whats App
+                                </button><br><br>
+                                <h6>Responds in <span class="text-success">30 Mins</span></h6>
+                                <h6><i class="bi bi-graph-up-arrow"></i> 730 people recently enquired</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-3 border-bedge rounded-3 p-3"
+                    style="max-height: fit-content; max-width: fit-content;">
+                    <div class="row g-0 justify-content-evenly">
+                        <div class="col-3">
+                            <img src="./hotel1.webp" class="card-img img-fluid rounded" alt="Hotel Enternce">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body w-auto">
+                                <h5 class="card-title"> Hotel A R Inn Lodging and Boarding</h5>
+                                <span class="badge bg-success text-light fs-6">4.3 <i
+                                        class="bi bi-star-fill"></i></span>
+                                <span class="badge text-secondary fs-6">284 Rating</span>
+                                <span class="badge text-light bg-warning fs-6">Trust</span>
+                                <span class="badge text-primary fs-6">Verified</span>
+                                <span class="fs-6"><span class="badge fs-6"><i
+                                            class="bi bi-search text-dark"></i></span>Top
+                                    Search</span>
+                                <h6 class="p-2"><i class="bi bi-geo-alt"></i> Bhaynder Road Mira Road East,
+                                    Thane</h6>
+                                <div>
+                                    <span class="badge text-dark fs-6">Pets Allowed</span>
+                                    <span class="badge text-dark fs-6">Swimming Pool</span>
+                                    <span class="badge text-dark fs-6">City View</span>
+                                </div><br>
+                                <button type="button" class="btn btn-success" href="tel:713-992-0916">
+                                    <i class="bi bi-telephone-fill"></i> 713-992-0916
+                                </button>
+                                <button type="button" class="btn btn-primary">Get Best Deals</button>
+                                <button type="button" class="btn border border-1 fw-bold" href="tel:713-992-0916">
+                                    <i class="bi bi-whatsapp"></i> Whats App
+                                </button><br><br>
+                                <h6>Responds in <span class="text-success">30 Mins</span></h6>
+                                <h6><i class="bi bi-graph-up-arrow"></i> 730 people recently enquired</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="container border-bedge rounded pt-5">
+                    <h5>Get the List of Top <span class="text-primary">Hotel</span></h5>
+                    <p>We'll send you contact details in seconds for free</p>
+                    <h5>What type of hotel are you looking for?</h5>
+                    <div class="d-flex">
+                        <div class="form-check m-2">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">Budget Hotel</label>
+                        </div>
+                        <div class="form-check m-2">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">Luxury Hotel Hotel</label>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="input-group mb-3 rounded">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"></i></span>
+                            <input type="text" class="form-control" placeholder="Full Name" aria-label="FName"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3 rounded">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-tablet-fill"></i></span>
+                            <input type="number" class="form-control" placeholder="Phone Number" aria-label="number"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 mb-3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <hr><br>
+
+        <!-- Footer -->
+        <div>
+            <div class="container-fluid">
+                <div class="container-fluid" style="font-size: 12px; font-weight: 400; color: #555;">
+                    <h6>Lets Pack Your Imagination and Dive Into the Wonderland of Hotels in Jaipur</h6>
+                    <p>Hotels! What to say about these lovely places, we can only say here dreams come true and reality
+                        fades
+                        away.Common Imagine this, you are entering a lobby that is lit up with chandeliers that are
+                        shining
+                        like
+                        stars in the night sky, and you are met by lovely smiling employees who could make a room glow
+                        faster
+                        than
+                        you can say, 'I'm here for the complimentary breakfast!</p>
+                    <p>
+                        Hotels provide entry points to worlds of luxury and style. They are not only buildings with
+                        rooms.
+                        With
+                        features like tropical-forced showers and pillows so soft you'll think you're sleeping on
+                        clouds,
+                        being at a
+                        hotel is an adventure in and of itself.</p>
+                    <p>
+                        Hotels are more than just luxury accommodation; they serve as entryways to worlds of comfort,
+                        elegance, and
+                        occasionally outright opulence. Every minute spent at a hotel is an adventure in and of itself,
+                        with
+                        plush
+                        pillows that make you feel as though you're on clouds and showers that pour down like a tropical
+                        storm.
+                    </p>
+                    <p>
+                        They are more than just places to lay your head; they are havens for tired travellers, little
+                        pockets of
+                        peace in an otherwise hectic. Whether you're travelling alone, with family, or on a romantic,
+                        have a
+                        way of
+                        engulfing you in a loving hug and reassuring you that will be taken care of.
+                    </p>
+                    <p>
+                        Have you heard of the fabled concierge who can secure a seat for you at the most popular
+                        restaurant
+                        in
+                        towneven if it's booked solid for the next ten years? Or how about the housekeeping staff, with
+                        their
+                        flawless tidiness, who could rival Marie Kondo? So why not treat yourself to a hotel stay the
+                        next
+                        time you
+                        find yourself in need of a short getaway from the everyday grind? Whether it's for a night or a
+                        week,
+                        indulge in the luxury, embrace the comfort, and let your dreams take flight in the magical world
+                        of
+                        hotels.
+                        After all, you deserve it!
+                    </p>
+                    <p>
+                        In the magical land of hotels, soak in the luxury, enjoy the comfort, and let your fantasies
+                        come
+                        true
+                        whether you're there for a night or a week. You deserve it, after all!
+                    </p>
+                    <p>
+                        Allow us to share some information with you regarding the potential costs associated with
+                        lodging at
+                        a
+                        hotel. While the average price of hotels in India varies greatly based on location, amenities,
+                        and
+                        star
+                        rating, cheap to mid-range hotels often cost between 1500 and 5000 per night, while luxury
+                        hotels
+                        can cost
+                        up to 20,000 or more.
+                    </p>
+
+                    <h6>Types of Amenities to Explore at Hotels</h6>
+                    <p>
+                        There are hotel amenities to fit every traveller's preferences and price range. These essential
+                        facilities
+                        will make your stay more enjoyable whether you're staying in a boutique hotel, a luxury hotel,
+                        or a
+                        cheap
+                        place to stay:
+                    <ul>
+                        <li><strong>Luxurious Spa Facilities:</strong> Indulge in a relaxing spa experience with
+                            wellness
+                            therapies,
+                            massages, and spa treatments. Luxurious lodgings, whether they are boutique hideaways or
+                            opulent
+                            resorts, frequently have top-notch spa services to promote relaxation and renewal.</li>
+                        <li><strong>Fancy Dining Experiences:</strong>Treat your taste buds to delectable meals prepared
+                            by
+                            famous
+                            chefs at on-site restaurants. Particularly boutique hotels take great satisfaction in
+                            providing
+                            distinctive dining experiences that highlight regional cuisines and ingredients.</li>
+                        <li><strong>Luxurious Bedding & Linens:</strong>Indulge in a cloud of comfort with luxurious
+                            bedding, linens
+                            with a high thread count, and fluffy pillows that ensure a peaceful slumber. Luxurious
+                            lodging
+                            makes
+                            sure that every elementfrom the duvet to the mattressis made to maximise relaxation and
+                            comfort.
+                        </li>
+                        <li><strong>Modern Exercise Facilities:</strong> With access to state-of-the-art fitness centres
+                            furnished
+                            with the newest workout gear and conveniences, you can keep invigorated and active while
+                            visiting.
+                            Budget accommodations frequently include minimal fitness centres to enable visitors to
+                            continue
+                            their
+                            exercise regimens while on the road.</li>
+                        <li><strong>Free Breakfast and Drinks:</strong>Get your day started well with a hearty,
+                            complimentary
+                            breakfast that offers something to satisfy every taste. As part of their breakfast
+                            offerings,
+                            boutique
+                            hotels frequently go above and beyond by providing handmade delicacies and locally sourced
+                            ingredients.
+                        </li>
+                    </ul>
+                    </p>
+                    <p>Hotels provide a wide range of amenities to make your stay more enjoyable and help you make
+                        lifelong
+                        memories, regardless of your preferences or price range. There's the ideal budget lodging choice
+                        out
+                        there,
+                        ready to embrace you, whether your preference is for luxurious extravagance, intimate boutique
+                        appeal, or
+                        reasonably priced comfort.</p>
+
+                    <h6>Behind the Scenes: An Inside Look at Hotel Operations</h6>
+                    <p>
+                        Hotels near me work feverishly behind the scenes, arranging a symphony of services to guarantee
+                        the
+                        comfort
+                        and contentment of their patrons. Teams of passionate individuals carefully oversee every facet
+                        of
+                        the
+                        visitor experience at the centre of our business. Employees in charge of housekeeping put forth
+                        endless
+                        effort to make rooms immaculate, and front desk representatives efficiently and kindly welcome
+                        visitors.
+                        While chefs create delectable dishes to entice palates, revenue managers work behind the scenes,
+                        crunching
+                        figures to optimise pricing tactics. In the meantime, maintenance teams make sure everything
+                        functions
+                        properly by maintaining the property in excellent shape. Every area, from event planning to
+                        concierge
+                        services, is essential to ensuring that visitors have a flawless experience. As teams cooperate
+                        to
+                        anticipate and meet the needs of visitors, cooperation and communication are essential.
+                    </p>
+
+                    <h6>What It Looks Like to Choose the Ideal Hotel</h6>
+                    <p>
+                        The exciting aspect of arranging a trip is choosing the perfect hotel near me, but with so many
+                        options, it
+                        can also be intimidating. Here's a quick guide to assist you in selecting the ideal hotel:
+                    </p>
+
+                    <ul>
+                        <li><strong>Location, Location, Location:</strong> Think about why you're travelling, then pick
+                            a
+                            hotel
+                            that's close to the things you want to see. Whether you're visiting for business,
+                            sightseeing,
+                            or just
+                            relaxing on the beach, being close to the attractions can save you time and trouble.</li>
+                        <li><strong>Budget Sensitivity:</strong> Ascertain your spending limit and choose a hotel that
+                            provides the
+                            most value for your money. Although boutique hotels and budget lodging options might provide
+                            similar
+                            amenities and comfort at a much lower cost, luxury accommodations may still be alluring.
+                        </li>
+                        <li><strong>Reviews and Suggestions:</strong> Look up reviews online and ask friends, relatives,
+                            or
+                            travel
+                            forums for suggestions. Keep an eye out for recent evaluations that accurately describe the
+                            hotel's
+                            present conditions, such as its cleanliness, level of service, and general satisfaction from
+                            past
+                            visitors.</li>
+                        <li><strong>Facilities and Amenities:</strong> List the facilities and amenities that are
+                            necessary
+                            for your
+                            visit. Choose hotels in Jaipur with features that suit your requirements and tastes first,
+                            whether that
+                            means a fitness centre, free breakfast, pet-friendly policies, or a swimming pool.</li>
+                        <li><strong>Book with Flexibility:</strong> Seek out lodging establishments that provide options
+                            for
+                            cancellations, loyalty programmes that honour returning visitors, and flexible booking
+                            policies.
+                        </li>
+                    </ul>
+
+                    <h6>Queries to Ask Your Hotel Staff</h6>
+
+                    <p>When interacting with hotel staff, asking the right questions can enhance your stay and ensure a
+                        memorable
+                        experience. Here are some queries to consider:
+                    </p>
+                    <strong>Check-In and Check-Out:</strong>
+                    <ul>
+                        <li>What time is check-in and check-out?</li>
+                        <li>Is early check-in or late check-out available, and is there an additional fee?</li>
+                        <li>Can luggage be stored before check-in or after check-out?</li>
+                    </ul>
+                    <strong>Room Details:</strong>
+                    <ul>
+                        <li>What type of room have I booked, and what amenities are included?</li>
+                        <li>Can I request a room with specific features, such as a view, balcony, or bathtub?</li>
+                        <li>Are there any room upgrades available, and what is the cost?</li>
+                    </ul>
+                    <strong>Hotel Facilities:</strong>
+                    <ul>
+                        <li>What facilities and services are available onsite, such as restaurants, fitness centres,
+                            spas,
+                            pools,
+                            etc.?</li>
+                        <li>Are there any complimentary services or activities for guests, such as shuttle services or
+                            guided tours?
+                        </li>
+                        <li>Do you offer any special packages or promotions for guests, such as honeymoon packages or
+                            family
+                            deals?
+                        </li>
+                    </ul>
+                    <strong>Dining Options:</strong>
+                    <ul>
+                        <li>What dining options are available onsite, including breakfast, lunch, and dinner?</li>
+                        <li>Are there any special restaurants or cuisines offered at the hotel?</li>
+                    </ul>
+                    <strong>Transportation and Logistics:</strong>
+                    <ul>
+                        <li>Do you offer airport shuttle services, and how do I arrange for pick-up or drop-off?</li>
+                    </ul>
+                    <strong>Guest Services:</strong>
+                    <ul>
+                        <li>How can I access wifi in the hotel, and is there a fee for internet access?</li>
+                        <li>Do you offer laundry or dry cleaning services for guests, and what are the rates?</li>
+                    </ul>
+                    <p>
+                        By asking these questions, you can ensure that your needs are met and that you make the most of
+                        your
+                        stay at
+                        the hotel. Don't hesitate to communicate any special requests or concerns to the hotel staff to
+                        ensure a
+                        comfortable and enjoyable experience.
+                    </p>
+                    <h6>A Day at your Dream Hotel</h6>
+
+                    <p>
+                        Embarking on a memorable day at a hotel offers endless possibilities for relaxation, adventure,
+                        and
+                        indulgence. Here's how to make the most of your day, from morning to night:
+                    </p>
+                    <strong>Morning:</strong>
+                    <p>
+                        Enjoy a leisurely breakfast in the restaurant or cafe in the hotel to start your day. Savour a
+                        delectable
+                        variety of freshly picked fruit, pastries, and your preferred morning beverage while taking in
+                        the
+                        peaceful
+                        atmosphere.
+                    </p>
+                    <p>
+                        Visit the hotel's fitness centre or wellness centre after breakfast for a restorative yoga class
+                        or
+                        workout.
+                        Modern spa services, swimming pools, and fitness centres are available to visitors at many
+                        hotels.
+                    </p>
+                    <p>
+                        If you're lodging at a beach resort, enjoy the immaculate coastline by going for a morning swim
+                        or
+                        strolling
+                        around the sandy beaches. As you begin your day in paradise, take in the crisp sea air and the
+                        warmth of the
+                        sun on your skin.
+                    </p>
+                    <strong>Afternoon:</strong>
+                    <p>
+                        For lunch, explore the culinary offerings of the hotel's on-site restaurants or cafes. Whether
+                        you're
+                        craving international cuisine, local specialities, or healthy options, there's something to
+                        satisfy
+                        every
+                        palate.
+                    </p>
+                    <p>
+                        Use the business centre and conference spaces in the hotel if you're staying there for business
+                        purposes to
+                        finish up work or participate in online meetings. Enjoy the conveniences of your business hotel
+                        with
+                        high-speed internet access and professional services to stay productive.
+                    </p>
+                    <strong>Eveninig</strong>
+                    <p>
+                        Enjoy a romantic dinner at the hotel's fine dining restaurant only or dine outside under the
+                        beautiful stars
+                        as the sun sets. Enjoy these fine dining and amazing service while raising a glass of wine to
+                        the
+                        day's
+                        exploits.
+                    </p>
+                    <p>
+                        Investigate the hotel's entertainment alternatives after dinner, including themed events, drink
+                        bars, and
+                        live music acts. Your evening will be unforgettable thanks to the hotel's entertainment options,
+                        whether you
+                        choose to dance the night away or have a quiet drink.
+                    </p>
+                    <p>
+                        Take a stroll around the hotel's grounds or unwind in the privacy of your room before turning in
+                        for
+                        the
+                        evening. Think back on the events of the day and treasure the memories you created throughout
+                        your
+                        fantastic
+                        hotel day.
+                    </p>
+
+                    <h6>Cost of Various Hotels in Jaipur</h6>
+
+                    <!-- Price Table 1 -->
+                    <div class="container m-5">
+                        <table class="table text-center w-auto">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Services</th>
+                                    <th scope="col">Approximate Cost (in Rs)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="">Rooms Rate</td>
+                                    <td class="">Rs. 1000 to 5000 per night</td>
+                                </tr>
+                                <tr>
+                                    <td class="">Dining</td>
+                                    <td class="">Rs. 500 to 2000 per person</td>
+                                </tr>
+                                <tr>
+                                    <td class="">Spa and Wellness</td>
+                                    <td class="">Rs. 1500 to 5000</td>
+                                </tr>
+                                <tr>
+                                    <td class="">Laundry and Dry Cleaning</td>
+                                    <td class="">Rs. 50 to 200 per piece</td>
+                                </tr>
+                                <tr>
+                                    <td class="">Fitness Center</td>
+                                    <td class="">Rs. 500 to 2000 per day</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p><strong>Please Note:</strong> Prices may differ across hotels and states. The prices mentioned
+                        above
+                        are
+                        indicative and subject to change.</p>
+                    <h6>How to Search For a Hotel on Justdial</h6>
+                    <p>
+                        Using Justdial to find the best hotel near me is a simple process. Here's a quick guide to help
+                        you
+                        use
+                        Justdial to discover the ideal hotel:
+                    </p>
+                    <ul>
+                        <li><strong>Go to the Justdial app or website:</strong> Use your smartphone to open the Justdial
+                            app
+                            or
+                            visit the Justdial website.</li>
+                        <li><strong>Enter Location:</strong> Specify the area in which you wish to conduct your hotel
+                            search. The
+                            name of a town, city, neighbourhood, or other specific location can be entered.</li>
+                        <li><strong>Choose the Hotels Category: </strong> Go to the 'Hotels' category after entering the
+                            location.
+                            Typically, the homepage or the search bar will provide this option.</li>
+                        <li><strong>Filter Options:</strong> Justdial offers a range of filter options to help you focus
+                            your search
+                            results. Hotels can be filtered based on a number of criteria, including facilities, star
+                            rating, and
+                            price range.</li>
+                        <li><strong>Explore Listings:</strong> Look through the hotel listings that meet your criteria
+                            after
+                            you've
+                            applied your filters. Essential information like the hotel name, address, phone number,
+                            photographs, and
+                            user ratings are usually included in every listing.</li>
+                        <li><strong>View Contact Information and Details:</strong> To see additional information,
+                            including
+                            room
+                            costs, features, and customer reviews, click on the name of the hotel. Once you've located a
+                            hotel that
+                            appeals to you, you can use Justdial to get in touch with them directly to book a room, find
+                            out
+                            about
+                            availability, or ask any other questions you may have.</li>
+                    </ul>
+                    <p>You may quickly search for hotels on Justdial and locate the ideal lodging by following these
+                        steps.
+                        Whether
+                        you're organising a weekend getaway, family holiday, or business trip, Justdial provides a
+                        practical
+                        platform to find and reserve hotels quickly.</p>
+
+                    <h6>Experience Hassle-free Coldplay Concert 2024 at DY Patil Stadium in Navi Mumbai</h6>
+
+                    <p>Get ready for an unforgettable experience at the Coldplay concert 2024 at DY Patil Stadium in
+                        Nerul,
+                        Navi
+                        Mumbai! As part of their highly anticipated Coldplay tour 2024, the band will be performing
+                        their
+                        greatest
+                        hits, promising a night full of music and excitement. Make sure to secure your Coldplay tickets
+                        early to
+                        avoid missing out on this spectacular event.</p>
+                    <p>Planning your visit to the Coldplay concert 2024 can be hassle-free. Whether you're looking for
+                        <a href="" class="text-decoration-none">Hotels near DY Patil Stadium, Cab Services in Navi
+                            Mumbai</a>, or other
+                        essential services, Justdial has got you covered. Find the best accommodations and
+                        transportation
+                        options to
+                        ensure a smooth and enjoyable concert experience.
+                    </p>
+                    <p>With Justdial, you can easily locate and book hotels near DY Patil Stadium that suit your
+                        preferences
+                        and
+                        budget. Additionally, Justdial provides information on cab services, making it convenient to
+                        travel
+                        to and
+                        from the Coldplay concert 2024. Enjoy the Coldplay tour 2024 without any worries, knowing that
+                        all
+                        your
+                        needs are taken care of.</p>
+                    <p>Don't miss out on the chance to be part of the Coldplay concert 2024. Book your Coldplay tickets
+                        now
+                        and let
+                        Justdial help you find the best hotels near DY Patil Stadium and other services for a memorable
+                        concert
+                        experience.</p>
+                    <p>For those planning to travel to DY Patil Stadium from afar, Justdial can make your journey
+                        seamless.
+                        Whether
+                        you need assistance with finding <a href="" class="text-decoration-none">travel agents nearby,
+                            railway
+                            ticket agent near me</a> or <a href="" class="text-decoration-none">flight booking agents
+                            near
+                            me</a>,
+                        Justdial offers a comprehensive directory of services. Easily locate travel agents who can help
+                        you
+                        plan
+                        your trip and book train & flight tickets, ensuring a hassle-free experience as you head to the
+                        Coldplay
+                        concert 2024.</p>
+
+                    <h6>The Impact of Seasonal Changes on Hotel Bookings in India</h6>
+
+                    <p>
+                        In India, the hospitality industry experiences significant fluctuations in hotel bookings due to
+                        various
+                        seasonal trends. Understanding these changes can help hotel owners and managers optimize their
+                        services and
+                        marketing strategies. The impact of different seasons on hotel bookings is crucial for
+                        maximizing
+                        occupancy
+                        rates and revenue.
+                    </p>
+
+                    <h6>Solar Season: Peak Travel Time</h6>
+                    <p>
+                        The solar season, which typically spans from March to June, marks the beginning of summer in
+                        India.
+                        This
+                        period witnesses a surge in travel as families and tourists seek to escape the heat. Many
+                        individuals plan
+                        vacations to hill stations and coastal regions, leading to increased hotel bookings in these
+                        areas.
+                    </p>
+                    <ul>
+
+                        <li>Popular destinations include Manali, Shimla, and Goa.</li>
+                        <li>Hotels often introduce summer packages and promotional offers to attract guests.</li>
+                        <li>Travel agencies also capitalize on this season by offering attractive travel deals.</li>
+                    </ul>
+
+                    <h6>Festive Season: A Time for Celebration</h6>
+
+                    <p>
+                        The festive season in India, which includes major festivals like Diwali, Holi, and Eid,
+                        significantly
+                        impacts hotel bookings. This period sees families traveling to celebrate with loved ones,
+                        leading to
+                        a spike
+                        in demand for accommodations.
+                    </p>
+                    <ul>
+                        <li>Hotels often decorate their premises and offer special festive packages.</li>
+                        <li>Local events and cultural programs attract tourists, enhancing the overall experience.</li>
+                        <li>Advance bookings are common as travelers secure their stays to avoid last-minute hassles.
+                        </li>
+                    </ul>
+                    <h6>Business Cyclic Season: Corporate Travel Trends</h6>
+                    <p>
+                        India's business cyclic season, characterized by various corporate events and conferences, plays
+                        a
+                        vital
+                        role in hotel occupancy. Major cities like Mumbai, Bangalore, and Delhi see a rise in business
+                        travelers
+                        during this time.
+                    </p>
+                    <ul>
+                        <li>Hotels often collaborate with businesses to provide corporate rates and packages.</li>
+                        <li>Meeting rooms and conference facilities become essential offerings for hotels during this
+                            season.</li>
+                        <li>Networking events and exhibitions further drive demand for hotel accommodations.</li>
+                    </ul>
+                    <h6>Monsoon Season: Challenges and Opportunities</h6>
+                    <p>
+                        The monsoon season, from June to September, presents unique challenges for the hospitality
+                        industry.
+                        While
+                        some regions experience a dip in tourist numbers due to heavy rainfall, others benefit from the
+                        lush
+                        greenery and cooler temperatures.
+                    </p>
+                    <ul>
+                        <li>Hill stations like Munnar and Ooty become popular monsoon getaways.</li>
+                        <li>Hotels can leverage this season by offering rain-themed packages and experiences.</li>
+                        <li>Precautions such as waterproofing and maintenance become essential for hotel management.
+                        </li>
+                    </ul>
+                    <h6>Winter Season: A Peak for Tourism</h6>
+                    <p>
+                        Winter, from October to February, is another peak season for hotel bookings in India. The
+                        pleasant
+                        weather
+                        attracts tourists to various destinations, including Rajasthan, Kerala, and the Himalayan
+                        region.
+                    </p>
+                    <ul>
+                        <li>Winter festivals and events, such as the Jaipur Literature Festival, draw large crowds.</li>
+                        <li>Hotels often provide special winter amenities, such as bonfires and warm cuisines.</li>
+                        <li>Adventure tourism, including skiing in Auli and trekking in Himachal Pradesh, boosts
+                            bookings.
+                        </li>
+                    </ul>
+                    <h6>Seasonal Trends: Adapting to Market Changes</h6>
+                    <p>
+                        Hotel owners must stay attuned to seasonal trends to remain competitive. Understanding consumer
+                        behavior
+                        during different seasons can lead to better marketing strategies and improved guest experiences.
+                    </p>
+                    <ul>
+                        <li>Utilizing social media and digital marketing to promote seasonal offers.</li>
+                        <li>Engaging with local tourism boards to enhance visibility during peak seasons.</li>
+                        <li>Collecting guest feedback to improve services and tailor offerings based on seasonal
+                            preferences.</li>
+                    </ul>
+                    <h6>Precautions During Seasonal Changes</h6>
+                    <p>
+                        With varying seasonal impacts, hotels must implement specific precautions to ensure guest safety
+                        and
+                        satisfaction. This is particularly important during the monsoon and summer seasons.
+                    </p>
+                    <ul>
+                        <li>Regular maintenance checks to prevent waterlogging and ensure infrastructure safety.</li>
+                        <li>Staff training to handle emergencies related to weather changes.</li>
+                        <li>Providing guests with information on local weather conditions and safety tips.</li>
+                    </ul>
+                    <p>
+                        By understanding the seasonal dynamics affecting hotel bookings in India, hotel owners can
+                        better
+                        position
+                        themselves to attract guests year-round. Tailoring services and marketing strategies to meet
+                        seasonal
+                        demands will ultimately lead to enhanced guest experiences and increased occupancy rates.
+                    </p>
+                    <h6>Approximate Cost (in Rs) Of Various Type of Room for Hotels in Jaipur</h6>
+                    <!-- Price Table 2 -->
+                    <div class="container m-5"></div>
+                    <table class="table text-center w-auto">
+                        <thead>
+                            <tr>
+                                <th scope="col">Type of Room</th>
+                                <th scope="col">Approximate Cost (in Rs)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="">Deluxe Room</td>
+                                <td class="">4,000 - 8,000 per night</td>
+                            </tr>
+                            <tr>
+                                <td class="">Executive Room</td>
+                                <td class="">3,500 - 6,000 per night</td>
+                            </tr>
+                            <tr>
+                                <td class="">Luxury Room</td>
+                                <td class="">7,000 - 15,000 per night</td>
+                            </tr>
+                            <tr>
+                                <td class="">Suite Room</td>
+                                <td class="">5,000 - 10,000 per night</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <hr>
+            <div style="font-size: 12px; font-weight: 400; color: #555;">
+                <h6>1. Which room kinds are available, and how can I pick the one that's best for me?</h6>
+                <p>Standard rooms, suites, and other kinds of <a href="" class="text-decoration-none">accommodations</a>
+                    are
+                    available in luxury hotels. Choosing according to your requirements and tastes is the best option.
+                    For help,
+                    get
+                    in touch with the front desk to examine room information and amenities.</p>
+                <br>
+                <h6>2. What is the cancellation policy, and is it possible for me to change or cancel my reservation?
+                </h6>
+                <p>Yes, you can modify or cancel your reservation based on the cancellation policy of luxury hotels.
+                    Depending
+                    on
+                    the price and kind of room, this information is normally given during the booking process. Please
+                    review the
+                    exact conditions pertaining to your reservation.</p>
+                <br>
+                <h6>3. Is there a Wi-Fi facility in the luxury hotels?</h6>
+                <p>Yes, most hotels or luxury hotels these days provide Wi-fi facilities to their guests to ensure they
+                    do not
+                    miss
+                    out on anything online. You can call your choice of <a href=""
+                        class="text-decoration-none">hotel</a>
+                    ahead
+                    of
+                    time and confirm the same. While some may offer this service for free or include it in the price of
+                    your
+                    room,
+                    others may charge you separately for using their Wi-Fi.</p>
+                <br>
+                <h6>4. Do luxury hotels come with parking lots?</h6>
+                <p>Yes, these days, you will find many hotels or luxury hotels with parking lots. This can help <a
+                        href="" class="text-decoration-none">make</a> your stay much more comfortable. However, be sure
+                    to inquire about
+                    the
+                    same, as some <a href="" class="text-decoration-none">luxury hotels</a> may charge you separately
+                    for such a
+                    service.</p>
+                <br>
+                <h6>5. Are <a href="" class="text-decoration-none">pets</a> allowed in luxury hotels?</h6>
+                <p>In some <a href="" class="text-decoration-none">luxury hotels</a>, pets are allowed, but they may
+                    charge an
+                    additional fee for cleaning and maintenance. If you plan to bring your pet with you, it is highly
+                    advised to
+                    cross-check if the luxury hotels allow it. Informing them in advance can be beneficial.</p>
+            </div>
+
+            <hr>
+
+            <div style="font-size: 12px; font-weight: 400; color: #555;">
+                <h6>Explore By Amenities in Jaipur</h6>
+
+                <p>
+                    <a href="" class="text-decoration-none link-dark">Hotels With Swimming Pool</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Bathtub Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Jacuzzi Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Parking</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Kitchen</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels Serving Buffet</a> | <a href=""
+                        class="text-decoration-none link-dark">Beach Side Hotels</a>
+                </p>
+            </div>
+
+            <hr>
+
+            <div style="font-size: 12px; font-weight: 400; color: #555;">
+                <h6>Explore By Amenities in Jaipur</h6>
+
+                <p>
+                    <a href="" class="text-decoration-none link-dark">Hotels With Swimming Pool</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Bathtub Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Jacuzzi Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Parking</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Kitchen</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels Serving Buffet</a> | <a href=""
+                        class="text-decoration-none link-dark">Beach Side Hotels</a>
+                </p>
+            </div>
+
+            <hr>
+
+            <div style="font-size: 12px; font-weight: 400; color: #555;">
+                <h6>Explore By Amenities in Jaipur</h6>
+
+                <p>
+                    <a href="" class="text-decoration-none link-dark">Hotels With Swimming Pool</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Bathtub Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Jacuzzi Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Parking</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Kitchen</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels Serving Buffet</a> | <a href=""
+                        class="text-decoration-none link-dark">Beach Side Hotels</a>
+                </p>
+            </div>
+
+            <hr>
+
+            <div style="font-size: 12px; font-weight: 400; color: #555;">
+                <h6>Explore By Amenities in Jaipur</h6>
+
+                <p>
+                    <a href="" class="text-decoration-none link-dark">Hotels With Swimming Pool</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Bathtub Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Jacuzzi Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Parking</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Kitchen</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels Serving Buffet</a> | <a href=""
+                        class="text-decoration-none link-dark">Beach Side Hotels</a>
+                </p>
+            </div>
+
+            <hr>
+
+            <div style="font-size: 12px; font-weight: 400; color: #555;">
+                <h6>Explore By Amenities in Jaipur</h6>
+
+                <p>
+                    <a href="" class="text-decoration-none link-dark">Hotels With Swimming Pool</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Bathtub Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Jacuzzi Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Parking</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Kitchen</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels Serving Buffet</a> | <a href=""
+                        class="text-decoration-none link-dark">Beach Side Hotels</a>
+                </p>
+            </div>
+
+            <hr>
+
+            <div style="font-size: 12px; font-weight: 400; color: #555;">
+                <h6>Explore By Amenities in Jaipur</h6>
+
+                <p>
+                    <a href="" class="text-decoration-none link-dark">Hotels With Swimming Pool</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Bathtub Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Jacuzzi Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Parking</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Kitchen</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels Serving Buffet</a> | <a href=""
+                        class="text-decoration-none link-dark">Beach Side Hotels</a>
+                </p>
+            </div>
+
+            <hr>
+
+            <div style="font-size: 12px; font-weight: 400; color: #555;">
+                <h6>Explore By Amenities in Jaipur</h6>
+
+                <p>
+                    <a href="" class="text-decoration-none link-dark">Hotels With Swimming Pool</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Bathtub Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Jacuzzi Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Parking</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Kitchen</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels Serving Buffet</a> | <a href=""
+                        class="text-decoration-none link-dark">Beach Side Hotels</a>
+                </p>
+            </div>
+
+            <hr>
+
+            <div style="font-size: 12px; font-weight: 400; color: #555;">
+                <h6>Explore By Amenities in Jaipur</h6>
+
+                <p>
+                    <a href="" class="text-decoration-none link-dark">Hotels With Swimming Pool</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Bathtub Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Jacuzzi Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Parking</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Kitchen</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels Serving Buffet</a> | <a href=""
+                        class="text-decoration-none link-dark">Beach Side Hotels</a>
+                </p>
+            </div>
+
+            <hr>
+
+            <div style="font-size: 12px; font-weight: 400; color: #555;">
+                <h6>Explore By Amenities in Jaipur</h6>
+
+                <p>
+                    <a href="" class="text-decoration-none link-dark">Hotels With Swimming Pool</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Bathtub Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Jacuzzi Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Parking</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Kitchen</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels Serving Buffet</a> | <a href=""
+                        class="text-decoration-none link-dark">Beach Side Hotels</a>
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="row px-3 py-4">
+                <div class="col fs-5">
+                    <span>Follow us on</span>
+                    <a href="#"><i class="bi bi-facebook text-primary fa-lg"></i></a>
+                    <a href="#"><i class="bi bi-youtube text-danger"></i></a>
+                    <a href="#"><i class="bi bi-instagram text-danger"></i></a>
+                    <a href="#"><i class="bi bi-linkedin text-primary"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x text-dark"></i></a>
+                </div>
+                <div class="col justify-content-end">
+                    <div class="badge text-bg-dark text-wrap" style="width: 6rem;">
+                        <i class="bi bi-google-play"></i> Get it on Google Play
+                    </div>
+                    <div class="badge text-bg-dark text-wrap" style="width: 7rem;">
+                        <i class="bi bi-apple"></i> Download on the App Store
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div style="font-size: 12px; font-weight: 400; color: #555;">
+                <h6>Explore By Amenities in Jaipur</h6>
+
+                <p>
+                    <a href="" class="text-decoration-none link-dark">Hotels With Swimming Pool</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Bathtub Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Jacuzzi Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Parking</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Kitchen</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels Serving Buffet</a> | <a href=""
+                        class="text-decoration-none link-dark">Beach Side Hotels</a>
+                </p>
+            </div>
+
+            <hr>
+
+            <div style="font-size: 12px; font-weight: 400; color: #555;">
+                <h6>Explore By Amenities in Jaipur</h6>
+
+                <p>
+                    <a href="" class="text-decoration-none link-dark">Hotels With Swimming Pool</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Bathtub Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Jacuzzi Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Parking</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Kitchen</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels Serving Buffet</a> | <a href=""
+                        class="text-decoration-none link-dark">Beach Side Hotels</a>
+                </p>
+            </div>
+
+            <hr>
+
+            <div style="font-size: 12px; font-weight: 400; color: #555;">
+                <h6>Explore By Amenities in Jaipur</h6>
+
+                <p>
+                    <a href="" class="text-decoration-none link-dark">Hotels With Swimming Pool</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Bathtub Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Jacuzzi Facility</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Parking</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels With Kitchen</a> | <a href=""
+                        class="text-decoration-none link-dark">Hotels Serving Buffet</a> | <a href=""
+                        class="text-decoration-none link-dark">Beach Side Hotels</a>
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="row px-4 pt-3 pb-2" style="font-size: 12px; font-weight: 400; color: #555;">
+                <div class="col">
+                    <h5>Quick Links</h5>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <ul class="list-unstyled">
+                                <li><a href="" class="text-decoration-none link-dark">About US</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Investors Relations</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">We're hiring</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Customer Care</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Free Listing</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">What's New</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Report a Bug</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">B2B Sitemap</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="list-unstyled">
+                                <li><a href="" class="text-decoration-none link-dark">Advertise</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Media</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Testimonials</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Feedback</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Business Badge</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Jd Collection</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Client Success Videos</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">B2B India Sitemap</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Listed on Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h5>Jd Verticals</h5>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <ul class="list-unstyled">
+                                <li><a href="" class="text-decoration-none link-dark">B2B</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Restaurants</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Hospitals</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Colleges</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Car Services</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Real Estate</a></li><br>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="list-unstyled">
+                                <li><a href="" class="text-decoration-none link-dark">All India</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Doctors</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Schools</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">AC Repairs</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Hotels</a></li><br>
+                                <li><a href="" class="text-decoration-none link-dark">Bills & Recharge</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row py-4 px-4" style="font-size: 12px; font-weight: 400; color: #555;">
+                <div class="col-12">
+                    <p>
+                        Copyrights 2008-24. All Rights Reserved. <a href=""
+                            class="text-decoration-none link-dark">Privacy</a> |
+                        <a href="" class="text-decoration-none link-dark">Terms</a> | <a href=""
+                            class="text-decoration-none link-dark">Infringement</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- JS Bootstrap -->
+    <script src="./Bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
