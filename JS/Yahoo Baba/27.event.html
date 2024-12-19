@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <div class="events">
+        <h1>Events in JS</h1>
+        <p>The change in the state of an object is known as an Event. <br> Events are fired to notify code of "interesting changes" that may affect code execution.</p>
+        <ul class="ul">
+            <li>Mouse events (click, double click etc.)</li>
+            <li>Keyboard events (keypress, keyup, keydown)</li>
+            <li>Form events (submit etc.)</li>
+            <li>Print event & many more</li>
+        </ul>
+        <button class="btn1">Single Click</button>
+        <button class="btn2">Double Click</button>
+    </div>
+
+    <script>
+        // Selecting Class
+        let events = document.querySelector(".events");
+
+        let btn1 = document.querySelector(".btn1")
+        let btn2 = document.querySelector(".btn2")
+
+        let ul = document.querySelector(".ul")
+        // Appling CSS
+        events.style.background = "#f4d3d9";
+        events.style.color = "#f06767";
+        events.style.height = "300px";
+        events.style.width = "300px";
+        events.style.border = "1px solid black";
+
+        btn1.style.background = "black";
+        btn1.style.color = "#f06767";
+        btn2.style.background = "black";
+        btn2.style.color = "#f06767";
+
+        ul.style.color = "rgb(168 139 236)"
+        
+        // Event Handling
+        btn1.onclick = (e) => {
+            let a = "Button was Single Clicked";
+            alert(a)
+            console.log(e.type)
+            console.log(e.target)
+        }
+        
+        btn2.ondblclick = (e) => {
+            let a = "Button was Double Clicked";
+            alert(a)
+            console.log(e.type)
+            console.log(e.target)
+        }
+        
+        ul.onmouseover = (e) => {
+            let a = "You just hover your mouse on UL";
+            alert(a)
+            console.log(e.type)
+            console.log(e.target)
+        }
+    </script>
+</body>
+</html>

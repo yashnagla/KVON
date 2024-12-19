@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice-chapter-6</title>
+</head>
+<body>
+    <script>
+        // Q1
+        let age = Number.parseInt(prompt("Enter your age :- "));
+        const canVote = (age) => {
+            return age >= 18 ? true : false;
+        }
+        if(canVote(age)){
+            alert("You can vote.");
+        }else{
+            alert("You cannot vote")
+        }
+
+        // Q3
+        if(age < 0){
+            console.error("Please Enter an valid age.");
+        }
+
+    </script>
+</body>
+</html>

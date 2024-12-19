@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Only Navigation</title>
+</head>
+<body>
+    <nav>
+        <ul class="ul">
+            <li>Home</li>
+            <li>Apout Me</li>
+            <li>Contact Me</li>
+            <li>Hire Me</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>I'm a good boy.</h1>
+    </div>
+
+    <script>
+
+        var list = document.querySelector(".ul");
+        list.style.display = "flex";
+
+        const changeBgRed = () => {
+            document.body.firstElementChild.style.background = "red";
+        };
+        changeBgRed();
+
+        let b = document.body
+        console.log("First child of b is " + b.firstChild)
+        console.log("First child of b is " + b.firstElementChild)
+    </script>
+</body>
+</html>

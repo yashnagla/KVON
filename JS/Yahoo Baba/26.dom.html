@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background: pink;
+        }
+        h1{
+            color: blue;
+        }
+        /* button{
+            background-color: blue;
+            color: #fff;
+        } */
+        #box{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(159, 243, 159);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div>
+        <h1>Fruits</h1>
+        <ul>
+            <li>Mango</li>
+            <li>Oranges</li>
+            <li>Litchi</li>
+        </ul>
+    </div> -->
+
+    <div id="box" name="JSdiv">this is a div
+        <ul>
+            <li>Mango</li>
+            <li>Oranges</li>
+            <li>Litchi</li>
+        </ul>
+    </div>
+    <p class="para">This is a simple paragraph</p>
+    
+    
+    <script>
+        console.log(window)
+        console.log(document)
+        console.dir(document)
+        document.body.childNodes[3].innerText = "ABCD"
+        console.log(document.getElementById("heading"))
+        console.dir(document.getElementById("heading"))
+        console.log(document.getElementsByClassName("heading"))
+        console.dir(document.getElementsByClassName("heading"))
+        console.log(document.getElementsByTagName("p"))
+        console.dir(document.getElementsByTagName("p"))
+        console.log(document.querySelector("p"))
+        console.dir(document.querySelector("p"))
+        console.log(document.querySelectorAll("p"))
+        console.dir(document.querySelectorAll("p"))
+
+        let div = document.querySelector("div");
+        console.log(div)
+        console.dir(div)
+        console.log(div.innerText)
+
+        let id = div.getAttribute("id");
+        console.log(id)
+        
+        let name = div.getAttribute("name");
+        console.log(name)
+
+        let para = document.querySelector("p")
+        console.log(para.getAttribute("class"))
+        console.log(para.setAttribute("class", "newClass"));
+
+        // Apply Style
+        div.style.background = "red";
+        div.style.color = "white";
+        div.style.fontSize = "32px";
+        div.style.height = "320px";
+        div.style.width = "320px";
+        div.style.display = "flex";
+        div.style.flexDirection = "column";
+        div.style.justifyContent = "center";
+        div.style.alignItems = "center";
+        
+
+        // Create Element
+        let newBtn = document.createElement("button")
+        newBtn.textContent = "Click Me";
+        console.log(newBtn)
+        console.dir(newBtn)
+
+        newBtn.style.backgroundColor = "green";
+        newBtn.style.color = "#fff"
+        
+        para.append(newBtn)
+        div.prepend(newBtn)
+        div.before(newBtn)
+        div.after(newBtn)
+
+
+        let newHeading =document.createElement("h1");
+        newHeading.innerHTML = "<i>Hi, i'm new</i>";
+        document.querySelector("body").prepend(newHeading)
+
+        // let para1 = document.querySelector("p");
+        para.remove();
+
+        </script>
+
+
+</body>
+
+</html>

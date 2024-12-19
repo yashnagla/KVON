@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date-method</title>
+</head>
+<body>
+    <script>
+        var now = new Date();
+
+        document.write("Date :- " + now + "<br><br>");
+
+        document.write("Date After using .toDateString() property :- " + now.toDateString() + "<br>");
+
+        document.write("Date After using .getDate() property :- " + now.getDate() + "<br>");
+        document.write("Date After using .getFullYear() property :- " + now.getFullYear() + "<br>");
+        document.write("Date After using .getMonth() property :- " + now.getMonth() + "<br>");
+        document.write("Date After using .getDay() property :- " + now.getDay() + "<br><br>");
+        
+        document.write("Date After using .getHours() property :- " + now.getHours() + "<br>");
+        document.write("Date After using .getMinutes() property :- " + now.getMinutes() + "<br>");
+        document.write("Date After using .getSeconds() property :- " + now.getSeconds() + "<br>");
+        document.write("Date After using .getMilliseconds() property :- " + now.getMilliseconds() + "<br><br>");
+        
+        now.setDate(23)
+        document.write("Date After using .setDate() property :- " + now + "<br>");
+        now.setFullYear(2030)
+        document.write("Date After using .setFullYear() property :- " + now + "<br>");
+        now.setMonth(0)
+        document.write("Date After using .setMonth() property :- " + now + "<br><br>");
+
+        now.setHours(12)
+        document.write("Date After using .setHours() property :- " + now + "<br>");
+        now.setMinutes(55)
+        document.write("Date After using .setMinutes() property :- " + now + "<br>");
+        now.setSeconds(12)
+        document.write("Date After using .setSeconds() property :- " + now + "<br>");
+        now.setMilliseconds(122)
+        document.write("Date After using .setMilliseconds() property :- " + now + "<br><br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string-methods</title>
+</head>
+<body>
+    <script>
+        let str = "JavaScript is a Great is Language";
+        // document.write(str + "<br>")
+        document.write("String After using .length  property :- " + str.length + "<br><br>")
+        
+        document.write("String After using .toUpperCase() property :- " + str.toUpperCase() + "<br>")
+        document.write("String After using .toLowerCase() property :- " + str.toLowerCase() + "<br><br>")
+        
+        let a = str.includes("Great");
+        document.write("String After using .includes() property :- " + a + "<br><br>")
+        
+        document.write("String After using .startsWith() property :- " + str.startsWith("Jav") + "<br>")
+        document.write("String After using .endsWith() property :- " + str.endsWith("age") + "<br><br>")
+        
+        document.write("String After using .search() property :- " + str.search("is") + "<br>")
+        document.write("String After using .match() property :- " + str.match(/is/g) + "<br><br>")
+        
+        document.write("String After using .indexOf() property :- " + str.indexOf("is") + "<br>")
+        document.write("String After using .lastIndexOf() property :- " + str.lastIndexOf("is") + "<br><br>")
+
+        document.write("String After using .replace() property :- " + str.replace("JavaScript", "Python") + "<br>")
+        document.write("String After using .trim() property :- " + str.trim() + "<br><br>")
+
+        document.write("String After using .charAt() property :- " + str.charAt(6) + "<br>")
+        document.write("String After using .charCodeAt() property :- " + str.charCodeAt(6) + "<br>")
+        let c = String.fromCharCode(1025)
+        document.write("String After using .fromCharCode() property :- " + c + "<br><br>")
+        
+        document.write("String After using .split() property :- " + str.split(" ") + "<br>")
+        let str1 = " JavaScript is a Great is Language";
+        document.write("String After using .concat() property :- " + str.concat(str1) + "<br><br>")
+        
+        document.write("String After using .repeat() property :- " + str.repeat(3) + "<br><br>")
+        
+        document.write("String After using .slice() property :- " + str.slice(10,25) + "<br><br>")
+
+        document.write("String After using .substr() property :- " + str.substr(2,5) + "<br>")
+        document.write("String After using .substring() property :- " + str.substring(3,5) + "<br><br>")
+        
+        document.write("String After using .toString() property :- " + str.toString() + "<br>")
+        document.write("String After using .valueOf() property :- " + str.valueOf(str) + "<br><br>")
+        
+    </script>
+</body>
+</html>

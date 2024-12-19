@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Method</title>
+</head>
+<body>
+    <script>
+
+        let a = "99";
+        let b = "99.33232323 9000";
+
+        let num = Number(a)
+        document.write("Number After using Number() property :- " + num + "<br><br>")
+        
+        let pInt = parseInt(b)
+        document.write("Number After using .parseInt() property :- " + pInt + "<br>")
+        let pFloat = parseFloat(b)
+        document.write("Number After using .parseFloat() property :- " + pFloat + "<br><br>")
+        
+        let isFini = isFinite(a)
+        document.write("Number After using .isFinite() property :- " + isFini + "<br>")
+        let isInt = Number.isInteger(a)
+        document.write("Number After using .isInteger() property :- " + isInt + "<br><br>")
+
+        let x = 5.323454678976543;
+        document.write("Number After using .toFixed(x) property :- " + x.toFixed(5) + "<br>")
+        document.write("Number After using .toPrecision(x) property :- " + x.toPrecision(5) + "<br><br>")
+    </script>
+</body>
+</html>

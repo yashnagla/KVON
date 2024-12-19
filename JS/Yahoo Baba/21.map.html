@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    <script>
+        // let arr = [1,3,5,7,9,11];
+        let arr = [
+            { fName : "Yash", lName : "Nagla" },
+            { fName : "Anant", lName : "Nagla" },
+            { fName : "Nilay", lName : "Vyas" }
+        ];
+        // document.write(arr + "<br>")
+        
+        let b = arr.map(test);
+        document.write(b + "<br>")
+        
+        function test(x){
+            // return x*10;
+            return x.fName + " " + x.lName
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <script>
+
+        // Array
+
+        let arr = [1,2,3,4,5,6,7,8,9,10];
+        let sum = 0;
+        for(let a = 0; a < 10; a++){
+            document.write(arr[a] + "<br>")
+            sum  = sum + arr[a];
+        }
+        document.write("Total of Array :- " + sum);
+        
+        // Array with New Keyword
+        let arr1 = new Array(5);
+
+        for (let g = 0; g <= 4; g++){
+            arr1[g] = prompt("Enter the value :- ")
+        }
+        for(let a = 0; a <= 4; a++){
+            document.write(arr1[a] + "<br>")
+        }
+    </script>
+</body>
+</html>

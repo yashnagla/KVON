@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        function hello(){
+            document.write("Hello Everyone <br>")
+        }
+        hello()
+
+        function sum(a,b){
+            document.write(a+b + " <br>");
+        }
+        sum(10,20)
+        
+        function fullName(fName, lName){
+            var a = "FullName :- " + fName + "_" + lName + "<br>";
+            return a;
+        }
+        // Function with Return Value
+        var b = fullName("Yash", "Nagle");
+        document.write(b)
+
+        function sub(math, eng, sc){
+            var s = math + eng + sc;
+            document.write(s + "<br>");
+            return s;
+        }
+
+        function percentage(tt){
+            var per = tt / 300 * 100;
+            document.write(per);
+        }
+
+        var total = sub(55,65,90);
+        percentage(total);
+
+    </script>
+</body>
+</html>

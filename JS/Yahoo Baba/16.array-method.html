@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+
+<body>
+    <script>
+        var arr = ["Harry","Sunny","Sarah","Tom"]
+        document.write("Array Original :- " + arr + "<br>")
+        document.write("Array After Sorted :- " + arr.sort() + "<br> <br>")
+        
+        document.write("Array After Reversed :- " + arr.reverse() + "<br>")
+        arr.pop()
+        document.write("Array After Pop :- " + arr + "<br> <br>")
+        
+        arr.push("Yash");
+        document.write("Array After Push :- " + arr + "<br>");
+        arr.shift();
+        document.write("Array After Shift :- " + arr + "<br> <br>");
+        arr.unshift("Nipun");
+        
+        let b = ["Harsh", "Nillanshu"]
+        document.write("Array After Concat :- " + arr.concat(b) + "<br>");
+        document.write("Array After Join :- " + arr.join("*//") + "<br> <br>");
+        
+        document.write("Array After Slice :- " + arr.slice(0, 3) + "<br>");
+        arr.splice(1,0,"Neha", "Karan");
+        document.write("Array After Splice :- " + arr + "<br> <br>");
+
+        document.write("Array After isArray :- " + Array.isArray(arr) + "<br>");
+        document.write("Array After  :- " + arr + "<br> <br>");
+
+        let x = arr.indexOf("Yash");
+        document.write("Array After indexOf() :- " + x + "<br>");
+        let y = arr.lastIndexOf("Yash");
+        document.write("Array After lastIndexOf() :- " + y + "<br><br>");
+
+        document.write("Array After Includes() :- " + arr.includes("Yash") + "<br><br>");
+        
+        let age = [14,20,35,22,5];
+        function checkAdult(age){
+            return age >= 18;
+        };
+        document.write("Array After some() :- " + age.some(checkAdult) + "<br>");
+        function checkAdult(age){
+            return age >= 18;
+        };
+        document.write("Array After every() :- " + age.every(checkAdult) + "<br><br>");
+        
+        document.write("Array After find() :- " + age.find(checkAdult) + "<br>");
+        document.write("Array After findIndex() :- " + age.findIndex(checkAdult) + "<br><br>");
+        
+        document.write("Array After filter() :- " + age.filter(checkAdult) + "<br><br>");
+
+        document.write("Array After toString() :- " + age.toString() + "<br>");
+        document.write("Array After valueOf() :- " + age.valueOf() + "<br><br>");
+        
+        let ages = [14,20,35,22,5]
+        let z = ages.fill("Ram");
+        document.write("Array After fill() :- " + z + "<br><br>");
+
+        document.write("Array After forEach() :- <br>");document.write(age.forEach(function(idx, value){document.write(value+ " : " + idx +"<br>")}));
+    </script>
+</body>
+
+</body>
+
+</html>

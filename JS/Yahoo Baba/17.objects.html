@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        var a = {
+            fName : "Yash",
+            lName : "Nagla",
+            fullName : function(){
+                return this.fName + " " + this.lName;
+            },
+            "age" : 23,
+            email : "name@gmail.com",
+            living : {
+                city : "Jaipur",
+                state : "Rajasthan"
+            },
+            frds : ["Nillanshu", "Vikas", "Nipun", "Harsh"],
+            salary : function(){
+                return 250000;
+            },
+            country : "India"
+        };
+        document.write(a + "<br>");
+        document.write(typeof a + "<br>");
+        document.write(a.fullName() + "<br>");
+        document.write(a.living.city + "<br>");
+        document.write(a.frds[0] + "<br>");
+        document.write(a.salary() + "<br>");
+        console.log(a);
+
+
+        let person = new Object();
+        person.fName = "Yash";
+        person.lName = "Nagle";
+        person.age = 23;
+
+        document.write(person['fName'] + "<br>")
+        document.write(person.age)
+
+    </script>
+</body>
+</html>
