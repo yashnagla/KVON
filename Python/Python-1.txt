@@ -73,3 +73,24 @@ Tuples :-
 It is a collection of items which are ordered and unchangeable.
 It is a built-in data type that stores set of values, it can store different types of data.
 It is similar to list but it is immutable.
+
+
+Dictionary :-
+It is a collection of key-value pairs.
+It is a built-in data type that stores set of values, it can stroe different types of data.
+Thay are unordered, mutable (changeable) and don't allow duplicate keys.
+Item = Key + Value.
+
+Dictionary Methods :-
+.keys() :- It is used to get all the keys of the dictionary.
+.values() :- It is used to get all the values of the dictionary.
+.items() :- It is used to get all the key-value pairs of the dictionary.
+.get("key") :- It is used to return the key according to value.
+.update(newDict) :- It is used to insert the specified item in the dictionary.
+.pop("key) :- It is used to remove the specified key from the dictionary.
+
+
+Set :-
+It is collection of unique and unordered items.
+It is immutable.
+It is a built-in data type that stores set of values, it can store different types of data.
