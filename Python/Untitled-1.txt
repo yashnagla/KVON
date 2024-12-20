@@ -51,5 +51,9 @@ String Function :-
 
 Conditional Statements :-
 They are used to execute different block of code based on conditions.
+if-elif-else
 
-if-elif-else :-
+List :-
+It is a collection of items which are ordered and changeable.
+It is a built-in data type that stores set of values
+It can store elements of different types (integer, float, string, etc.).
