@@ -48,3 +48,8 @@ String Function :-
 .replace(old, new)
 .find(word)
 .count("am")
+
+Conditional Statements :-
+They are used to execute different block of code based on conditions.
+
+if-elif-else :-
