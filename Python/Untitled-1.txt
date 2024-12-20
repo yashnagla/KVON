@@ -13,3 +13,38 @@ An operator is a symbol that performs a certain operation between operands.
 • Relational I Comparison Operators :- ==, !=, >, <, >=, <=
 • Assignment Operators :- =, +=, -=, *=, /=, %=, **=
 • Logical Operators :- not , and , or
+
+
+
+Strings :-
+Strings is data type that stores a sequence of characters.
+
+Escape Sequence :-
+\n - New Line
+\r - Carriage Return
+\t - Tab
+\b - BackSpace
+\0 - Null Character
+\\ - Backslash
+\'' - Single Quotes
+\"" - Double Quotes
+
+String Concatenation :-
+It is a process of combining tow or more string into one string.
+
+String Lenght :-
+It is a function that returns the length of the string.
+It also counts space, digits, and special characters.
+
+String Indexing :-
+It is a process of accessing characters using index.
+
+Slicing :-
+It is a process of accessing a subset of characters from a string.
+
+String Function :-
+.endswith("")
+.capitalize()
+.replace(old, new)
+.find(word)
+.count("am")
