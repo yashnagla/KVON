@@ -57,3 +57,19 @@ List :-
 It is a collection of items which are ordered and changeable.
 It is a built-in data type that stores set of values
 It can store elements of different types (integer, float, string, etc.).
+
+List Methods :-
+.append() :- It is used to add element at the end of the list.
+.sort() :- It is used to sort the list in ascending order.
+.sort(reverse = True) :- It is used to sort the list in descending order.
+.revese() :- It is used to reverse the list.
+.insert(idx, el) :- It is used to insert element at the specified index.
+.pop() :- It is used to remove the last element of the list.
+.pop(idx) :- It is used to remove the element at the specified index.
+.remove(el) :- It is used to remove the first occurrence of the element.
+
+
+Tuples :-
+It is a collection of items which are ordered and unchangeable.
+It is a built-in data type that stores set of values, it can store different types of data.
+It is similar to list but it is immutable.
