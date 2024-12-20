@@ -113,18 +113,21 @@ fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
 # list3 = list1 + list2
 # print(list3)
 
-x = 'awesome'
-def myfunc():
-  global x
-  x = 'fantastic'
-myfunc()
-print('Python is ' + x)
+# x = 'awesome'
+# def myfunc():
+#   global x
+#   x = 'fantastic'
+# myfunc()
+# print('Python is ' + x)
 
-print(int(35.88))
+# print(int(35.88))
 
 
-print(10 > 9)
+# print(10 > 9)
 
-mylist = ['apple', 'banana', 'cherry']
-mylist[1:2] = ['kiwi', 'mango']
-print(mylist[2])
+# mylist = ['apple', 'banana', 'cherry']
+# mylist[1:2] = ['kiwi', 'mango']
+# print(mylist[2])
+
+s = "My name is {} and I am {} years old.".format("Alice", 22)
+print(s)

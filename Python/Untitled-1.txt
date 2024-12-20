@@ -1,0 +1,8 @@
+Introduction to Python :-
+Python is a interpreted language.
+
+What is Python?
+It is simple and easy.
+Free and Open Source.
+It's a High Leve Language.
+Portable and can run on any platform.

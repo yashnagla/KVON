@@ -128,7 +128,7 @@ lower()
 strip()
 replace("H", "J")
 split(",") 
-join(",") :- join() is used to concatenate all items in a list into a single string.
+join("myList") :- join() is used to concatenate multiple strings.
 
 String Concatenation :-
 To concatenate, or combine, two strings you can use the + operator.
@@ -170,6 +170,7 @@ lower()
 replace()
 split()
 swapcase()
+format() :- 
 
 Booleans :-
 A boolean is a variable that can have one of two values: True or False.
