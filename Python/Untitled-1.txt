@@ -6,3 +6,10 @@ It is simple and easy.
 Free and Open Source.
 It's a High Leve Language.
 Portable and can run on any platform.
+
+Types of Operators
+An operator is a symbol that performs a certain operation between operands.
+• Arithmetic Operators :- +, -, *, /, %, **
+• Relational I Comparison Operators :- ==, !=, >, <, >=, <=
+• Assignment Operators :- =, +=, -=, *=, /=, %=, **=
+• Logical Operators :- not , and , or
