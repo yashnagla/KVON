@@ -92,5 +92,17 @@ Dictionary Methods :-
 
 Set :-
 It is collection of unique and unordered items.
-It is immutable.
+It is mutable but it's elements are immutable.
 It is a built-in data type that stores set of values, it can store different types of data.
+It ignores the duplicate values.
+To make a empty set we use set() function.
+Fro example :- 
+collection = set()
+
+Set Methods :-
+.add(el) :- It is used to add element to the set.
+.remove(el) :- It is used to remove element from the set.
+.clear() :- It is used to remove all element from the set.
+.pop() :- It is used to remove the last element from the set.
+.union(set2) :- It is used to return a new set with elements from the set1 and set2.
+.intersection(set2) :- It is used to return a new set with element common to the set1 and set2.
