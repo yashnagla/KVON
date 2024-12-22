@@ -128,3 +128,16 @@ range( start?, stop, step?)
 pass Statement :-
 pass is a null statement that does nothing.
 It is used as a placeholder for future code.
+
+
+Function :-
+A function is a block of code that can be called multiple times form different parts of the program.
+It is a block of code that can be reused.
+
+Types of Function :-
+1. built-in function
+2. user-defined function
+   
+
+Recursion :-
+When a function calls itself repeatedly.
