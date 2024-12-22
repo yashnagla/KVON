@@ -106,3 +106,12 @@ Set Methods :-
 .pop() :- It is used to remove the last element from the set.
 .union(set2) :- It is used to return a new set with elements from the set1 and set2.
 .intersection(set2) :- It is used to return a new set with element common to the set1 and set2.
+
+
+
+Loops :-
+Loops are used to execute a block of code repeatedly for a specified number of times.
+Loops are used to repeat instructions.
+
+While Loops :-
+It is used to execute a block of code repeatedly while a condition is true.
