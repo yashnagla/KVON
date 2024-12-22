@@ -141,3 +141,31 @@ Types of Function :-
 
 Recursion :-
 When a function calls itself repeatedly.
+
+
+File I/O :-
+Python can be used to perform operations on a file. (read & write data)
+Types of all files :-
+1. Text Files : .txt, .docx, .10g etc.
+2. Binary Files : .mp4, .mov, .png, .jpeg etc.
+
+I/O Options :-
+'r' :- open for reading (default)
+'w' :- open for writing, truncating the file first
+'x' :- create a new file and open it for writing
+'a' :- open for writing, appending to the end of the file if it exists, add at the end
+'b' :- binary mode
+'t' :- text mode (default)
+'+' :- open a disk file for updating (reading and writing)
+
+with Syntax :-
+It automtically close the file after completing the code.
+
+Deleting File :-
+using the os module
+Module (like a code library) is a file written by another programmer that generally has a functions we can use.
+Sample :-
+import os
+os.remove("fileName.fileExtension") 
+
+Here remove is a built-in function of os module
