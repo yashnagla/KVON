@@ -15,6 +15,15 @@
     width: 10% !important;
 }
 
+.border-right-quiz-question{
+    border-right: 1px solid #a39e9e;
+}
+
+.shadow-lg-quiz-question{
+    box-shadow: 0 1rem 3rem rgb(255 0 0 / 18%);
+    /* box-shadow: 0 1rem 3rem #F65C1A; */
+}
+
 .w-160px {
     width: 160px !important;
 }
