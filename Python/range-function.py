@@ -7,7 +7,7 @@ for val in even :
 x = int(input("Enter Starting Point "))
 y = int(input("Enter Ending Point "))
 
-odd = range(x, y, 2)
+odd = range(0, 10, 1)
 print("Odd Range")
 for val in odd : 
     print(val)
