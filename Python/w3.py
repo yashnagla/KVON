@@ -77,19 +77,23 @@
 # add = sum(10)
 # print(add(11))
 
-x = 5
-y = 6
-class Sum:
-  z = x + y
+# x = 5
+# y = 6
+# class Sum:
+#   z = x + y
 
-sum1 = Sum()
-print(sum1.z)
+# sum1 = Sum()
+# print(sum1.z)
 
-i =0 
-while i < 5:
-  if i ==0:
-    continue
-  i += 1
-  print(i)
-# else:
-  break
+# i =0 
+# while i < 5:
+#   if i ==0:
+#     continue
+#   i += 1
+#   print(i)
+# # else:
+#   break
+
+a = int("0027", 8)
+
+print(a, type(a))
