@@ -137,6 +137,10 @@ To add a space between them, add a " ".
 F-Strings :-
 F-String is now the preferred way of formatting strings.
 To specify a string as an f-string, simply put an f in front of the string literal, and add curly brackets {} as placeholders for variables and other operations.
+Example :-
+name = "Alice"
+age = 25
+print(f"My name is {name} and I am {age} years old.")
 
 Placeholders and Modifiers :-
 A placeholder can contain variables, operations, functions, and modifiers to format the value.
