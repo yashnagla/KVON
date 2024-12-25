@@ -1,0 +1,58 @@
+/* Styling for the question number container */
+.question-number {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #1f5667;
+    color: white;
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+    width: 60px;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for question numbers */
+.question-number:hover {
+    background-color: #ff8a3f;
+    transform: scale(1.1);
+}
+
+/* Styling for the sidebar question numbers */
+#questionNumbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* Styling for the mobile question numbers */
+#mobileQuestionNumbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Styling for the active question number (the current question) */
+.active-question {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Styling for the number when clicked (for both sidebar and mobile) */
+.question-number:active {
+    background-color: #006400;
+    transform: scale(1);
+}
+
+/* Additional styles for mobile responsiveness */
+@media (max-width: 767px) {
+    #questionNumbers {
+        display: none;
+    }
+
+    #mobileQuestionNumbers {
+        display: flex;
+        justify-content: center;
+    }
+}

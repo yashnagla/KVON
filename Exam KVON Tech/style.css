@@ -15,6 +15,11 @@
     width: 10% !important;
 }
 
+.w-span-75{
+    width: 80%;
+    border-bottom: 1px solid black;
+}
+
 .border-right-quiz-question{
     border-right: 1px solid #a39e9e;
 }
@@ -112,7 +117,7 @@ body {
 .index-page .form input {
     background: transparent;
     border: none;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
 }
 
 .index-page .dropdown-button {
@@ -128,13 +133,20 @@ body {
     height: 80vh;
 }
 
-.index-page .form input,
+/* .index-page .form div{
+    border-bottom: 1px solid black;
+} */
+
 .index-page .form span,
 .index-page .form select {
     height: 47px;
     background: transparent;
     border: 0;
-    border-bottom: 1px solid black;
+}
+
+.index-page .form i {
+    color: #6e6e6e;
+    font-size: 20px;
 }
 
 .index-page .btn:hover {

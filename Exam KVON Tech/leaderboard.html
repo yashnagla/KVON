@@ -18,22 +18,8 @@
 
         <!-- NavBar Section -->
         <nav class="navbar navbar-section navbar-expand-lg">
-            <div class="mx-5 row flex-column flex-lg-row w-100">
-                <div class="col my-2">
-                    <img src="./img/logo.svg" class="img-fluid" alt="">
-                </div>
-                <!-- <div class="col d-flex justify-content-center my-2">
-                    <div id="navbarSupportedContent">
-                        <ul class="leaderboard-ul d-flex justify-content-end flex-row navbar-nav fs-4 fw-bold gap-3">
-                            <li class="nav-item">
-                                <i class="fa-regular fa-clock"></i> 60 Min
-                            </li>
-                            <li class="nav-item">
-                                Total Questions :- 2
-                            </li>
-                        </ul>
-                    </div>
-                </div> -->
+            <div class="container">
+                <img src="./img/logo.svg" class="img-fluid" alt="">
             </div>
         </nav>
 
@@ -56,9 +42,7 @@
                                 <li class="d-flex align-items-center gap-3 color-666666"><i
                                         class="fa-regular fa-circle-check text-black"></i>You can go back to
                                     previous questions.</li>
-                                <li class="d-flex align-items-center gap-3 color-666666"><i
-                                        class="fa-regular fa-circle-check text-black"></i>Your final score will be
-                                    displayed at the end of the quiz.</li>
+                                <li class="d-flex align-items-center gap-3 color-666666"><i class="fa-regular fa-circle-check text-black"></i>Your final score will be displayed at the end of the quiz.</li>
                             </ul>
                         </div>
                         <div>
@@ -78,7 +62,7 @@
                                     Specify whether judges will verify answers before awarding points.</li>
                             </ul>
                         </div>
-                        <div class="d-flex align-items-center justify-content-between gap-3 mt-3 flex-column flex-lg-row">
+                        <div class="d-flex align-items-center justify-content-between gap-3 mt-4 mt-md-5 flex-column flex-lg-row">
                             <div class="d-flex align-items-center">
                                 <p class="color-444444 mb-0">Quiz has already started.</p>
                             </div>
@@ -87,23 +71,22 @@
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
+        
+            <footer class="footer position-fixed bottom-0 w-100">
+                <div>
+                    <p class="text-center fw-medium mb-0">
+                        <small>© 2024 - 2025
+                            <a href="" class="text-white fw-semibold">
+                                KvonTech Consultancy Services Private Limited
+                            </a>.
+                            All rights reserved.
+                        </small>
+                    </p>
+                </div>
+            </footer>
         </div>
-
-        <footer class="footer position-fixed bottom-0 w-100">
-            <div>
-                <p class="text-center fw-medium mb-0">
-                    <small>© 2024 - 2025
-                        <a href="" class="text-white fw-semibold">
-                            KvonTech Consultancy Services Private Limited
-                        </a>.
-                        All rights reserved.
-                    </small>
-                </p>
-            </div>
-        </footer>
-
-    </div>
 
 
     <!-- FontAwesome -->
@@ -113,7 +96,7 @@
     <!-- Custom JS -->
     <script>
             document.getElementById('startQuizButton').addEventListener('click', function () {
-                window.location.href = './quiz.html';
+                window.location.href = './quiz copy.html';
             });
     </script>
 
