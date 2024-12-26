@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
-    <link rel="stylesheet" href="css/styles.css">
     <!-- BootStrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./q-no-style.css">
+
+    <!-- Question Number JS -->
+    <script defer src="./question_number.js"></script>
+    
+    <!-- Timer JS -->
+    <script defer src="./timer.js"></script>
+
 </head>
 
 <body>
@@ -27,8 +33,8 @@
                         <div class="nav-item text-light">
                             <i class="fa-regular fa-clock"></i>
                         </div>
-                        <div class="nav-item text-light">
-                            60 Min
+                        <div class="nav-item text-light" id="timer">
+                            60:00
                         </div>
                     </div>
                 </div>
@@ -40,67 +46,9 @@
                 <!-- Side Bar Section -->
                 <div class="col-3 col-xxl-2 d-none d-md-block">
                     <div class="bg-light shadow p-3 overflow-y-auto" style="scrollbar-width: none; height: 92.5vh;">
-                        <div class="row gx-3 gy-3 row-cols-1 row-cols-sm-2 row-cols-md-3">
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">1</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">2</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">3</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">4</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">5</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">6</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">7</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">8</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">9</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">10</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">11</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">12</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">13</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">14</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">15</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">16</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">17</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">18</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">19</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">30</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">21</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">22</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">23</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">24</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">25</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">26</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">27</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">28</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">29</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">30</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">31</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">32</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">33</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">34</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">35</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">36</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">37</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">38</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">39</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">40</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">41</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">42</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">43</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">44</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">45</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">46</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">47</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">48</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">49</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">50</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">51</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">52</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">53</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">54</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">55</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">56</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">57</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">58</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">59</button></div>
-                            <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">60</button></div>
+                        <div class="gx-3 gy-3">
+                            <!-- Sidebar -->
+                            <div id="questionNumbers" class="questionNumbers row row-cols-1 row-cols-sm-2 row-cols-md-3"></div>
                         </div>
                     </div>
                 </div>
@@ -108,77 +56,19 @@
                 <div class="col d-flex justify-content-center">
                     <div class="row w-100 py-3">
                         <!-- Side Bar Section for Mobile View -->
-                        <div class="col-12 col-sm-12  d-md-none d-md-none">
+                        <div class="col-12 col-sm-12 d-md-none">
                             <div class="d-flex justify-content-center">
                                 <button class="btn bg-F65C1A text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Questions</button>
                             </div>
                             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                                 <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Ouestions</h5>
+                                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Questions</h5>
                                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body">
-                                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 gx-3 gy-3">
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">1</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">2</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">3</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">4</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">5</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">6</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">7</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">8</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">9</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">10</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">11</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">12</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">13</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">14</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">15</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">16</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">17</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">18</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">19</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">30</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">21</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">22</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">23</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">24</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">25</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">26</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">27</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">28</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">29</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">30</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">31</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">32</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">33</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">34</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">35</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">36</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">37</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">38</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">39</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">40</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">41</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">42</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">43</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">44</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">45</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">46</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">47</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">48</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">49</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">50</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">51</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">52</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">53</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">54</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">55</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">56</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">57</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">58</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">59</button></div>
-                                        <div class="col-3"><button class="btn w-100 bg-1f5667 text-white fw-medium">60</button></div>
+                                    <div class="row row-cols-3 row-cols-sm-2 row-cols-md-3 gx-3 gy-3 w-100">
+                                        <div id="mobileQuestionNumbers" class=" questionNumbers"></div>
+                                        <!-- Off-canvas -->
                                     </div>
                                 </div>
                             </div>
@@ -186,47 +76,26 @@
                         <!-- Questions -->
                         <div class="col d-flex flex-column justify-content-center align-items-center question-section">
                             <div class="col-9 col-xxl-10 py-3 d-flex flex-column w-100 h-75 justify-content-center">
-                                <h5 class="text-black fw-semibold fs-5 pt-2">Question 1/20</h5>
+                                <!-- This will show the current question number dynamically -->
+                                <div id="currentQuestionSection">
+                                    <p class="fw-semibold">Question <span class="fw-semibold" id="currentQuestionNumber"></span> Out of <span class="fw-semibold" id="totalQuestions"></span></p>
+                                </div>
+                                <!-- <div id="currentQuestionNumber"></div>
+                                <div id="totalQuestions"></div> -->
+                                
                                 <div class="mb-3">
-                                    <div class="height-question-section question-container overflow-y-auto box-shadow-0000001a bg-white rounded-3">
-                                        <h6 class="text-black fw-semibold p-3 py-4 border-bottom mb-0">Which of the following is true about the Scheduler?</h6>
+                                    <div class="p-3 height-question-section question-container overflow-y-auto box-shadow-0000001a bg-white rounded-3">
+                                        <h2 id="questionText" class="questionText fs-6 fw-bold">Question Text</h2>
+                                        <hr>
                                         <div class="py-3 d-flex flex-column gap-4 px-4">
-                                            <div class="option-container d-flex align-items-center gap-2 rounded-5 border-d2d2d2">
-                                                <input class="form-check-input m-0 rounded-circle" type="checkbox" value=""
-                                                    id="flexCheckChecked" checked>
-                                                <label class="form-check-label text-black fw-medium" for="flexCheckChecked">
-                                                    The job scheduler selects from among the processes that are ready to execute and
-                                                    allocates the CPU to one of them.
-                                                </label>
-                                            </div>
-                                            <div class="option-container d-flex align-items-center gap-2 rounded-5 border-d2d2d2">
-                                                <input class="form-check-input m-0 rounded-circle" type="checkbox" value=""
-                                                    id="flexCheckChecked">
-                                                <label class="form-check-label text-black fw-medium" for="flexCheckChecked">
-                                                    The short-term scheduler loads selected processes into memory for execution.
-                                                </label>
-                                            </div>
-                                            <div class="option-container d-flex align-items-center gap-2 rounded-5 border-d2d2d2">
-                                                <input class="form-check-input m-0 rounded-circle" type="checkbox" value=""
-                                                    id="flexCheckChecked">
-                                                <label class="form-check-label text-black fw-medium" for="flexCheckChecked">
-                                                    The long-term scheduler executes much less frequently.
-                                                </label>
-                                            </div>
-                                            <div class="option-container d-flex align-items-center gap-2 rounded-5 border-d2d2d2">
-                                                <input class="form-check-input m-0 rounded-circle" type="checkbox" value=""
-                                                    id="flexCheckChecked">
-                                                <label class="form-check-label text-black fw-medium" for="flexCheckChecked">
-                                                    All of the above
-                                                </label>
-                                            </div>
+                                            <div id="options" class="lh-lg options"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="d-flex pt-2 align-items-center justify-content-center gap-3">
-                                    <button class="btn border text-bg-primary rounded fw-medium w-160px">Previous</button>
-                                    <button class="btn border text-bg-danger rounded fw-medium w-160px">Clear</button>
-                                    <button class="btn border text-bg-primary rounded fw-medium w-160px">Next</button>
+                                    <button id="prevBtn" class="prevBtn btn border text-bg-primary rounded fw-medium w-160px" aria-label="Previous Question">Previous</button>
+                                    <button id="clearBtn" class="nextBtn btn border text-bg-danger rounded fw-medium w-160px" aria-label="Clear Question">Clear</button>
+                                    <button id="skipBtn" class="skipBtn btn border text-bg-primary rounded fw-medium w-160px" aria-label="Skip Question">Next</button>
                                     <!-- <button class="btn border text-bg-success rounded fw-medium w-160px">Submit</button> -->
                                 </div>
                             </div>
@@ -238,10 +107,21 @@
 
     </div>
 
+    <!-- Validation -->
+    <script src="./validation.js"></script>
+
+    <!-- Functionality -->
+    <script src="./functionality.js"></script>
+    
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/ae86c4f0b6.js" crossorigin="anonymous"></script>
     <!-- BootStrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Question Number Background Color -->
+    <!-- <script src="./question_number_bg_color.js"></script> -->
+    <script src="./question_number_bg_color.js"></script>
+
 
 </body>
 
