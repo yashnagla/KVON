@@ -1,0 +1,44 @@
+# # Arithmetic Operators
+a = 5
+b = 2
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(a % b)
+print(a ** b)
+
+# # Comparison Operator
+x = 50
+y = 20
+print(x == b)
+print(x != b)
+print(x >= b)
+print(x <= b)
+print(x > b)
+print(x < b)
+
+# # Assignment Operator
+num = 10
+num += 5
+print(num)
+num -= 5
+print(num)
+num *= 5
+print(num)
+num /= 5
+print(num)
+num %= 5
+print(num)
+num **= 5
+print(num)
+
+# Logical Operators
+
+name = input("Enter Your Name :- ")
+age = int(input("Enter your age :- "))
+marks = float(input("Enter your marks :- "))
+
+print("Your Name :- ", name)
+print("Your Age :- ", age)
+print("Your Marks :- ", marks)
